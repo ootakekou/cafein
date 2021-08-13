@@ -1,10 +1,27 @@
-<h1>Hello World</h1>
-    <ul class='lists-right'>
+<header>
+</header>
+ 
+ <div class="cafe-main">
+     <div class="logo">
+    cafe-In
+  </div>
+ <div class="backimage">
+   
+   <div class="main-top">
       <% if user_signed_in?%>
-      <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li> 
-      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%></li> 
+      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%>
       <% else %>
-      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-      <li><%= link_to '新規登録', new_user_registration_path,  class: "sign-up" %></li>
+      <%= link_to 'ログイン', new_user_session_path, class: "main-login" %><br>
+     <%= link_to '新規登録', new_user_registration_path,  class: "main-signup" %>
       <% end %>
-    </ul>
+   </div>
+  </div>
+
+ <div class="main-bottom">
+ <div class="intro">
+   Cafe-Inはコーヒーが好きな方やカフェへ行く方、へ送るアプリとなっております。
+   <p>カフェで勉強したい時にコンセントが無かったり、話し声が多くて集中できずせっかく落ち着きたい時に落ち着けないという状況ありませんでしたか？</p>
+  <p>このアプリはそんな悩みを解決することができ、自身が行ったカフェの写真を投稿し他のカフェ好きと共有できるアプリです！</p>
+  </div>
+  </div>
+</div>

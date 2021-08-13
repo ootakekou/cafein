@@ -134,10 +134,6 @@ body{
    color: rgba(255,255,255,0.6);
 }
 
-::-moz-input-placeholder{
-   color: rgba(255,255,255,0.6);
-}
-
 .sign-body{
 	position: absolute;
 	top: -20px;
@@ -154,8 +150,8 @@ body{
 
 .sign-header{
 	position: absolute;
-	top:  calc(20% - 75px);
-	left: calc(60% - 180px);
+	top:  calc(30% - 75px);
+	left: calc(50% - 180px);
 	z-index: 2;
 }
 
@@ -172,15 +168,14 @@ body{
 
 .signin{
 	position: absolute;
-	top: calc(30% - 75px);
-	left: calc(40% - 50px);
-	height: 540px;
+	top: calc(12% - 80px);
+	left: calc(60% - 50px);
+	height: 760px;
 	width: 450px;
 	padding: 15px;
 	z-index: 2;
 	overflow:auto;
-	border: 2px solid white;
-	box-shadow: 10px 10px 10px 10px black;
+	background-color:rgba(255, 0, 0, 0.13);
 }
 
 .form-group{

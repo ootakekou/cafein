@@ -1,3 +1,4 @@
+/*ログアウト時のトップページCSS*/
 .cafe-main{
 	height: 100vh;
 	width: 100vw;
@@ -64,3 +65,34 @@
 	z-index: 3;
 	background-color:rgba(255, 255, 255, 0.767);
 }
+/*ログイン時のトップページCSS*/
+.login-main{
+	height: 100vh;
+	width: 100vw;
+	background-color: silver
+}
+
+
+.purchase-btn {
+  width: 120px;
+  background: white;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+}
+
+.purchase-btn-text {
+  color: black;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.purchase-btn-icon {
+  width: 60%;
+}
+

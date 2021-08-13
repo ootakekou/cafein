@@ -1,27 +1,43 @@
 <header>
 </header>
- 
+
+ <% if user_signed_in?%>
+ <!--サインイン時のトップページ-->
+<div class="login-main">
+<div class="post-cafe">
+ <%= link_to("#", class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>投稿するz</span>
+  <%= image_tag 'cafe-icon.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+<% end %>
+</div>
+
+
+
+<div class="rogin-main-top">
+ <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%>
+  <% else %>
+ </div>
+ </div>
+
+ <!--ロフアウト時のトップページ-->
  <div class="cafe-main">
      <div class="logo">
     cafe-In
-  </div>
- <div class="backimage">
+     </div>
+  <div class="backimage">
    
-   <div class="main-top">
-      <% if user_signed_in?%>
-      <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%>
-      <% else %>
+    <div class="main-top">
       <%= link_to 'ログイン', new_user_session_path, class: "main-login" %><br>
      <%= link_to '新規登録', new_user_registration_path,  class: "main-signup" %>
-      <% end %>
+      
+    </div>
+  </div>
+  <div class="main-bottom">
+   <div class="intro">
+     <p>Cafe-Inはコーヒーが好きな方やカフェへ行く方、へ送るアプリとなっております。</p>
+     <p>カフェで勉強したい時にコンセントが無かったり、話し声が多くて集中できずせっかく落ち着きたい時に落ち着けないという状況ありませんでしたか？</p>
+     <p>このアプリはそんな悩みを解決することができ、自身が行ったカフェの写真を投稿し他のカフェ好きと共有できるアプリです！</p>
    </div>
   </div>
-
- <div class="main-bottom">
- <div class="intro">
-   Cafe-Inはコーヒーが好きな方やカフェへ行く方、へ送るアプリとなっております。
-   <p>カフェで勉強したい時にコンセントが無かったり、話し声が多くて集中できずせっかく落ち着きたい時に落ち着けないという状況ありませんでしたか？</p>
-  <p>このアプリはそんな悩みを解決することができ、自身が行ったカフェの写真を投稿し他のカフェ好きと共有できるアプリです！</p>
-  </div>
-  </div>
 </div>
+<% end %>

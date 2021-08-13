@@ -10,7 +10,7 @@ body{
 	font-family: Arial;
 	font-size: 12px;
 }
-
+/*ログインCSS*/
 .body{
 	position: absolute;
 	top: -20px;
@@ -139,6 +139,7 @@ body{
    color: rgba(255,255,255,0.6);
 }
 
+/*サインアップCSS*/
 .sign-body{
 	position: absolute;
 	top: -20px;

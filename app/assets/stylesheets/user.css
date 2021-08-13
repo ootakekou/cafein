@@ -146,7 +146,7 @@ body{
 	right: -40px;
 	bottom: -40px;
 	width: auto;
-	height: auto;
+	height: 100%;
 	background-image: url(coffee.jpeg);
 	background-size: cover;
 	-webkit-filter: blur(3px);
@@ -175,7 +175,7 @@ body{
 	position: absolute;
 	top: calc(12% - 80px);
 	left: calc(60% - 50px);
-	height: 760px;
+	height: 100%;
 	width: 450px;
 	padding: 15px;
 	z-index: 2;

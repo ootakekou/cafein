@@ -1,0 +1,24 @@
+ <div class="body">
+</div>
+		<div class="grad">
+    
+    </div>
+		<div class="header">
+			<div>
+      <span>Login</span>
+      </div>
+		</div>
+		<br>
+		<div class="login">
+       <%=form_with model:@user, url: user_session_path, class: 'session-main' ,local: true do |f| %>
+     <div class='login-flash-message'>
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
+  </div>
+    <%= f.email_field :email, class:"login-email", placeholder: "メールアドレス", id: "email", autofocus: true %><br>
+    <%= f.password_field :password, class: "login-pass", placeholder: "Password", id: "password" %><br>
+    <%= f.submit "ログイン",class:"login-button"%>
+		</div>
+    <% end %>
+
+<%= render "devise/shared/links" %>

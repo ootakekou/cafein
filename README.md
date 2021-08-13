@@ -1,24 +1,60 @@
-# README
+## users テーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column               | Type   | Option            |
+| -------------------- | ------ | ----------------- |
+| nickname             | string | null: false       |
+| encrypted_password   | string | null: false       |
+| first_name           | string | null: false       |
+| last_name            | string | null: false       |
+| first_kana           | string | null: false       |
+| last_kana            | string | null: false       |
+| email                | string | null: false       |
+| birthday             | date   | null: false       |
 
-Things you may want to cover:
+### Association
+-has_many :cafes
+-has_many :favorites
+-has_many :comments
 
-* Ruby version
+## cafes テーブル
 
-* System dependencies
+| Column               | Type       | Option                         |
+| -------------------- | ---------- | ------------------------------ |
+| drink_name           | string     | null: false                    |
+| text                 | text       | null: false                    |
+| wifi                 | integer    |                                |
+| oshare               | integer    |                                |
+| shizuka              | integer    |                                |
+| concent              | integer    |                                |
+| speak                | integer    |                                |
+| bright_room          | integer    |                                |
+| dark_room            | integer    |                                |
+| pet                  | integer    |                                |
+| smoke_room           | integer    |                                |
+| address              | string     | null: false                    |
+| user                 | references | null: false, foreign_key: true |
 
-* Configuration
+### Association
+-belongs_to :user
+-has_many :favorites
+-has_many :comments
 
-* Database creation
+## favorites
 
-* Database initialization
+| Column              | Type       | option                         |
+| ------------------- | ---------- | ------------------------------ |
+| favo                | integer    |                                |
+| user                | references | null: false, foreign_key: true |
+| cafe                | references | null: false, foreign_key: true |
 
-* How to run the test suite
+## Association
+-belongs_to :user
+-belongs_to :cafe
 
-* Services (job queues, cache servers, search engines, etc.)
+## comments
 
-* Deployment instructions
-
-* ...
+| Column              | Type       | option                         |
+| ------------------- | ---------- | ------------------------------ |
+| text                | text       |                                |
+| user                | references | null: false, foreign_key: true |
+| cafe                | references | null: false, foreign_key: true |

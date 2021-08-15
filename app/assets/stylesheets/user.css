@@ -4,13 +4,13 @@
 body{
 	margin: 0;
 	padding: 0;
-	background:hsl(0, 7%, 76%);
+	background:rgb(255, 255, 255);
 
 	color: #fff;
 	font-family: Arial;
 	font-size: 12px;
 }
-
+/*ログインCSS*/
 .body{
 	position: absolute;
 	top: -20px;
@@ -139,6 +139,7 @@ body{
    color: rgba(255,255,255,0.6);
 }
 
+/*サインアップCSS*/
 .sign-body{
 	position: absolute;
 	top: -20px;
@@ -146,7 +147,7 @@ body{
 	right: -40px;
 	bottom: -40px;
 	width: auto;
-	height: auto;
+	height: 100%;
 	background-image: url(coffee.jpeg);
 	background-size: cover;
 	-webkit-filter: blur(3px);
@@ -175,7 +176,7 @@ body{
 	position: absolute;
 	top: calc(12% - 80px);
 	left: calc(60% - 50px);
-	height: 760px;
+	height: 100%;
 	width: 450px;
 	padding: 15px;
 	z-index: 2;

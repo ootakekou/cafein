@@ -1,1 +1,93 @@
-<h1>Hello World</h1>
+<div class="new-main">
+
+<%= form_with model:@cafe, url:cafes_path, local: true do |f| %>
+
+<div class="cafe-new-main">
+<div class="weight-cafe-text">
+ 投稿写真
+ <span>必須</span>
+ </div>
+<div class="cafe-image">
+<p>
+ 写真をアップロード
+ </p>
+<%= f.file_field :image, id:"cafe-image" %>
+ </div>
+</div>
+
+<div class="cafe-new-text">
+<div class="weight-cafe-text">
+ドリンク名
+<span>必須</span>
+</div>
+ <%= f.text_area :drink_name, id: "drink_name", class: "cafe-text", placeholder:"例)ドリップコーヒー" %>
+</div>
+
+<div class="cafe-new-text">
+<div class="weight-cafe-text">
+投稿情報
+<span>必須</span>
+</div>
+<%= f.text_area :text, id: "text", class: "cafe-text", placeholder:"カフェの雰囲気や金額、コメントを記入してください。" %>
+</div>
+
+
+<div class="cafe-new-check">
+該当する項目にチェックを入れてください。
+<span>任意</span>
+</div>
+<div class="cafe-check">
+<div class="check-box">
+Wifi<br>
+<%= f.check_box :wifi, id: "wifi", class:"cafe-checkbox" %>
+</div>
+<div class="check-box">
+おしゃれ<br>
+<%= f.check_box :oshare, id:"oshare", class:"cafe-checkbox" %>
+</div>
+<div class="check-box">
+静か<br>
+<%= f.check_box :shizuka, id:"shizuka", class:"cafe-checkbox" %>
+</div>
+<div class="check-box">
+コンセント<br>
+<%= f.check_box :concent, id:"concent", class:"cafe-checkbox" %>
+</div>
+<div class="check-box">
+会話しやすい<br>
+<%= f.check_box :speak, id:"speak", class:"cafe-checkbox" %>
+</div>
+<div class="check-box">
+明るい<br>
+<%= f.check_box :bright_room, id:"bright_room", class:"cafe-checkbox" %>
+</div>
+<div class="check-box">
+暗い<br>
+<%= f.check_box :dark_room, id:"dark_room", class:"cafe-checkbox" %>
+</div>
+<div class="check-box">
+ペット可<br>
+<%= f.check_box :pet, id:"pet", class:"cafe-checkbox" %>
+</div>
+<div class="check-box">
+喫煙スペース有<br>
+<%= f.check_box :smoke_room, id:"smoke_room", class:"cafe-checkbox" %>
+</div>
+</div>
+
+<div class="cafe-address">
+<div class="addres-text">
+住所を記入してください。
+<span>必須</span>
+</div>
+<%= f.text_field :address, id:"address", class:"cafe-addres-map", placeholder:"東京都"%>
+<input type="button" value="検索" onclick="codeAddress()">
+<div id="map" >
+</div>
+</div>
+
+<div class="cafe-buttton">
+<%= f.submit "投稿する", class:"sell-btn" %>
+<%=link_to "戻る", root_path, class:"back-btn" %>
+<% end %>
+</div>

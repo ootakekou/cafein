@@ -1,0 +1,65 @@
+.new-main{
+  height:100vh;
+  width:100vw;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.cafe-new-main{
+  border: 1px solid yellow;
+}
+
+.cafe-new-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weight-cafe-text{
+  border: 1px solid red;
+  text-align: center;
+}
+
+.cafe-image{
+  border: 1px solid black;
+  text-align: center;
+}
+
+.cafe-text{
+  color: white;
+  background-color: blue;
+  
+}
+
+.cafe-check{
+  margin-top: 10px;
+	display: flex;
+}
+
+.cafe-checkbox{
+ margin-right: 100px;
+}
+
+.cafe-address{
+position: absolute;
+left: 500px;
+}
+
+#map {
+  height: 300px;
+  width: 400px;
+  border:1px solid red;
+}
+
+.cafe-buttton{
+  position: absolute;
+  bottom: 40px;
+  left: 620px;
+}
+
+.sell-btn{
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+}

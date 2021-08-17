@@ -14,6 +14,8 @@ class CafesController < ApplicationController
     else
       render :new
     end
+
+    
   end
   
 

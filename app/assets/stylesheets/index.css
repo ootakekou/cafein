@@ -114,3 +114,46 @@
 	text-decoration: none;
 	border: 1px solid white;
 }
+
+/*投稿写真一覧*/
+
+.image-up{
+	position: absolute;
+	bottom: 60px;
+	left: 200px;
+}
+
+.cafe-img {
+  width: 33vh;
+  height: 33vh;
+	margin-left: 20px;
+}
+
+.cafe-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+	align-items: flex-end;
+	overflow-x: auto;
+   white-space: nowrap;
+   -webkit-overflow-scrolling: touch;
+}
+
+.cafe-img-content{
+	position: relative;
+}
+
+.cafe-itm{
+	display: inline-block;
+	width: 50%;
+
+	/* 見た目調整 */
+	height: 400px;
+	margin: 16px;
+	background: rgba(255, 0, 0, 0.4)
+}
+/*.cafe-favorite{
+	width: 80vw;
+	height: 80vh;
+	border: 1px solid red;
+}*/

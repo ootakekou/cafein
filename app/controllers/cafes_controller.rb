@@ -7,6 +7,14 @@ class CafesController < ApplicationController
     @cafe = Cafe.new
   end
 
+  def show
+    @cafe = Cafe.find(params[:id])
+    @lat = @cafe.latitude
+    @lng = @cafe.longitude
+    gon.lat = @lat
+    gon.lng = @lng
+  end
+
   def create
     @cafe = Cafe.new(create_params)
     if @cafe.save
@@ -14,13 +22,11 @@ class CafesController < ApplicationController
     else
       render :new
     end
-
-    
   end
   
 
   private
   def create_params
-    params.require(:cafe).permit(:drink_name, :text, :wifi, :oshare, :shizuka, :concent, :speak, :bright_room, :dark_room, :pet, :smoke_room, :address, :image).merge(user_id: current_user.id)
+    params.require(:cafe).permit(:drink_name, :text, :wifi, :oshare, :shizuka, :concent, :speak, :bright_room, :dark_room, :pet, :smoke_room, :address,:image).merge(user_id: current_user.id)
   end
 end

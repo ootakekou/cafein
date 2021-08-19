@@ -1,0 +1,65 @@
+
+<div class='cafe-show'>
+
+  <div class='cafe-show-item'>
+    <%= image_tag(@cafe.image, class:'cafe-img-box')%>
+  </div>
+   <div class='cafe-show-item'>
+     <%= @cafe.drink_name %>
+   </div>
+   <div class='cafe-show-item'>
+    <%= @cafe.text %>
+   </div>
+   <div class="cafe-show-item">
+    <%= form_with model:@cafe, method: :get, local: true do |f| %>
+    <div class="cafe-check">
+    <div class="check-box">
+  Wifi<br>
+<%= f.check_box :wifi, id: "wifi", class:"cafe-checkbox", disabled:"disabled" %>
+</div>
+<div class="check-box-show" >
+おしゃれ<br>
+<%= f.check_box :oshare, id:"oshare", class:'cafe-checkbox', disabled:"disabled" %>
+</div>
+<div class="check-box">
+静か<br>
+<%= f.check_box :shizuka, id:"shizuka", class:"cafe-checkbox", disabled:"disabled" %>
+</div>
+<div class="check-box">
+コンセント<br>
+<%= f.check_box :concent, id:"concent", class:"cafe-checkbox", disabled:"disabled"  %>
+</div>
+<div class="check-box">
+会話しやすい<br>
+<%= f.check_box :speak, id:"speak", class:"cafe-checkbox", disabled:"disabled"  %>
+</div>
+<div class="check-box">
+明るい<br>
+<%= f.check_box :bright_room, id:"bright_room", class:"cafe-checkbox", disabled:"disabled"  %>
+</div>
+<div class="check-box">
+暗い<br>
+<%= f.check_box :dark_room, id:"dark_room", class:"cafe-checkbox", disabled:"disabled"  %>
+</div>
+<div class="check-box">
+ペット可<br>
+<%= f.check_box :pet, id:"pet", class:"cafe-checkbox", disabled:"disabled" %>
+</div>
+<div class="check-box">
+喫煙スペース有<br>
+<%= f.check_box :smoke_room, id:"smoke_room", class:"cafe-checkbox", disabled:"disabled"  %>
+</div>
+   <% end %>
+   </div>
+   </div>
+   <div class='cafe-show-item'>
+   <%= @cafe.address %>
+   </div>
+   <div id="show_map">
+   </div>
+<div>
+  <%= link_to "編集する", "#", class: "cafe-edit" %>
+   <%= link_to "削除", "#", class:"cafe-destroy" %>
+   </div>
+</div>
+

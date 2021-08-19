@@ -1,31 +1,48 @@
-let map
-function initMap(){
-  geocoder = new google.maps.Geocoder()
+let map 
+let geocoder 
 
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 35.6599313, lng:139.6957543},
-    zoom: 15,
-  });
+function initMap(){ 
+  geocoder = new google.maps.Geocoder() 
+  if(document.getElementById('map')){ 
+    map = new google.maps.Map(document.getElementById('map'), { 
+      center: {lat: 35.6594666, lng: 139.7005536}, 
+      zoom: 15,
+    });
+    marker = new google.maps.Marker({ 
+      position:  {lat: 35.6594666, lng: 139.7005536}, 
+      map: map 
+    });
+  }else{ 
+    map = new google.maps.Map(document.getElementById('show_map'), { 
+      center: {lat: gon.lat, lng: gon.lng},
+      zoom: 15,
+    });
 
-  marker = new google.maps.Marker({
-    position:  {lat: 35.6599313, lng:139.6957543},
-    map: map
-  });
-}
-  function codeAddress(){
-    let inputAddress = document.getElementById('address').value;
-  
-    geocoder.geocode( { 'address': inputAddress}, function(results, status) {
-      if (status == 'OK') {
-        map.setCenter(results[0].geometry.location);
-        var marker = new google.maps.Marker({
-            map: map,
-            position: results[0].geometry.location,
-            zoom: 15,
-        });
-      } 
-    });   
+    marker = new google.maps.Marker({ 
+      position:  {lat: gon.lat, lng: gon.lng}, 
+      map: map 
+    });
   }
+}
+
+function codeAddress(){ 
+  let inputAddress = document.getElementById('address').value; 
+  geocoder.geocode( { 'address': inputAddress}, function(results, status) { 
+    if (status == 'OK') {
+      let lat = results[0].geometry.location.lat(); 
+      let lng = results[0].geometry.location.lng(); 
+      let mark = {
+          lat: lat, 
+          lng: lng,
+      };
+      map.setCenter(results[0].geometry.location); 
+      let marker = new google.maps.Marker({
+          map: map, 
+          position: results[0].geometry.location
+      });
+    } 
+  });   
+}
 
 window.addEventListener("load", initMap);
 window.addEventListener("click", codeAddress);

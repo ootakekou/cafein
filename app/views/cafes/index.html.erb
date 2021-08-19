@@ -1,7 +1,7 @@
 <header>
 </header>
 
- <% if user_signed_in?%>
+ <% if user_signed_in?  %>
  <!--サインイン時のトップページ-->
 <div class="login-main">
 <div class="post-cafe">
@@ -19,8 +19,12 @@
 <% @cafes.each do |cafe| %>
 <li class='cafe-item'>
 <div class='cafe-img-content'>
+<%= link_to cafe_path(cafe.id), method: :get do %>
+<% if current_user.id == cafe.user.id %>
 <%= image_tag(cafe.image, class: "cafe-img") %>
+<% end %>
 </div>
+<% end %>
 <% end %>
 </li>
 </ul>

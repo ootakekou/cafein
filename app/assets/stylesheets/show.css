@@ -1,0 +1,40 @@
+.cafe-show{
+  width: 100vw;
+  height: 100vh;
+  background-color: seashell;
+  text-align: center;
+  color: black;
+}
+
+.cafe-show-item{
+  border: 1px solid red;
+}
+
+.cafe-img-box{
+  width: 33vh;
+  height: 33vh;
+}
+
+#show_map{
+  display: inline-flex;
+  justify-content: center;
+  height: 320px;
+  width: 400px;
+  margin-top: 10px;
+}
+
+.cafe-edit{
+  font-size:20px;
+  border: 1px solid red;
+  margin: 0 10px;
+}
+
+.cafe-destroy{
+font-size: 20px;
+border: 1px solid red;
+margin: 0 25px;
+}
+
+.cafe-checkbox{
+
+}

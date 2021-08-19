@@ -33,6 +33,8 @@
 | smoke_room           | integer    |                                |
 | address              | string     | null: false                    |
 | user                 | references | null: false, foreign_key: true |
+| latitude             | float      |                                |
+| longitude            | float      |                                |
 
 ### Association
 -belongs_to :user

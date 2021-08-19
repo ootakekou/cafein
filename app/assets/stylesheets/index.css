@@ -140,17 +140,11 @@
 }
 
 .cafe-img-content{
-	position: relative;
+
 }
 
 .cafe-itm{
-	display: inline-block;
-	width: 50%;
 
-	/* 見た目調整 */
-	height: 400px;
-	margin: 16px;
-	background: rgba(255, 0, 0, 0.4)
 }
 /*.cafe-favorite{
 	width: 80vw;

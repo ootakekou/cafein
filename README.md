@@ -13,7 +13,7 @@
 
 ### Association
 -has_many :cafes
--has_many :favorites
+-has_many :likes
 -has_many :comments
 
 ## cafes テーブル
@@ -38,14 +38,14 @@
 
 ### Association
 -belongs_to :user
--has_many :favorites
+-has_many :likes
 -has_many :comments
 
-## favorites
+## likes
 
 | Column              | Type       | option                         |
 | ------------------- | ---------- | ------------------------------ |
-| favo                | integer    |                                |
+| like                | integer    |                                |
 | user                | references | null: false, foreign_key: true |
 | cafe                | references | null: false, foreign_key: true |
 

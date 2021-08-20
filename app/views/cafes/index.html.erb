@@ -1,7 +1,16 @@
+ <% if user_signed_in?  %>
 <header>
+<div class="rogin-main-top">
+<!--いいね総数画面遷移-->
+<div class="cafe-favorite">
+<%= link_to "いいねランキング", cafe_likes_path(:cafe_id), method: :get, class:"favorite" %>
+</div>
+<!--ユーザーログイン表示-->
+<%= link_to current_user.nickname, "#", class: "user-nickname" %>
+ <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%>
+ </div>
 </header>
 
- <% if user_signed_in?  %>
  <!--サインイン時のトップページ-->
 <div class="login-main">
 <div class="post-cafe">
@@ -11,8 +20,24 @@
 <% end %>
 </div>
 
+<!--投稿写真全て表示-->
+<div class="image-likes">
+ <div class="index-list">
+ <ul class="main-list">
+ <% @cafes.each do |cafe|%>
+ <li class='cafe-item'>
+<div class='cafe-img-content'>
+<%= link_to cafe_path(cafe.id), method: :get do %>
+<%= image_tag(cafe.image, class: "cafe-img") %>
+<% end %>
+</div>
+<% end %>
+</li>
+</ul>
+ </div>
+</div>
 
-<!--投稿写真一覧表示-->
+<!--ユーザー投稿写真一覧表示-->
 <div class='image-main'>
 <div class='image-up'>
 <ul class='cafe-list'>
@@ -30,19 +55,8 @@
 </ul>
 </div>
 </div>
-<!--お気に入り表示写真-->
-<div class="cafe-favorite">
-</div>
-
-
-
-<div class="rogin-main-top">
-<%= link_to current_user.nickname, "#", class: "user-nickname" %>
- <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%>
   <% else %>
  </div>
- </div>
-
  <!--ロフアウト時のトップページ-->
  <div class="cafe-main">
      <div class="logo">

@@ -19,6 +19,12 @@ class CafesController < ApplicationController
     @cafe = Cafe.find(params[:id])
   end
 
+  def destroy
+    @cafe = Cafe.find(params[:id])
+    @cafe.destroy
+    redirect_to root_path(@cafe)
+  end
+
   def update
     @cafe = Cafe.find(params[:id])
     if @cafe.update(create_params)

@@ -15,6 +15,20 @@ class CafesController < ApplicationController
     gon.lng = @lng
   end
 
+  def edit
+    @cafe = Cafe.find(params[:id])
+  end
+
+  def update
+    @cafe = Cafe.find(params[:id])
+    if @cafe.update(create_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
+  
   def create
     @cafe = Cafe.new(create_params)
     if @cafe.save

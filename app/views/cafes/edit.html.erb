@@ -1,7 +1,5 @@
 <div class="new-main">
-
-<%= form_with model:@cafe, url:cafes_path, local: true do |f| %>
-
+<%= form_with model:@cafe, local: true do |f| %>
 <div class="cafe-new-main">
 <div class="weight-cafe-text">
  投稿写真
@@ -88,6 +86,6 @@ Wifi<br>
 
 <div class="cafe-buttton">
 <%= f.submit "投稿する", class:"sell-btn" %>
-<%=link_to "戻る", root_path, class:"back-btn" %>
+<%=link_to "戻る", cafe_path(@cafe.id), class:"back-btn" %>
 <% end %>
 </div>

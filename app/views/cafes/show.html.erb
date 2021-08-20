@@ -58,7 +58,7 @@
    <div id="show_map">
    </div>
 <div>
-  <%= link_to "編集する", "#", class: "cafe-edit" %>
+  <%= link_to "編集する",edit_cafe_path(@cafe.id), method: :get, class: "cafe-edit" %>
    <%= link_to "削除", "#", class:"cafe-destroy" %>
    </div>
 </div>

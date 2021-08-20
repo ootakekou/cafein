@@ -70,7 +70,6 @@
 .login-main{
 	height: 100vh;
 	width: 100vw;
-	background-color: silver
 }
 
 
@@ -83,6 +82,7 @@
   right: 32px;
   position: fixed;
   padding: 15px;
+	border:1px solid black;
 }
 
 .purchase-btn-text {
@@ -95,24 +95,6 @@
 
 .purchase-btn-icon {
   width: 60%;
-}
-
-.logout{
-	position: absolute;
-	top:30px;
-	left: 1200px;
-	font-size: 20px;
-	text-decoration: none;
-	border: 1px solid white;
-}
-
-.user-nickname{
-	position: absolute;
-	top: 30px;
-	left: 1100px;
-	font-size: 25px;
-	text-decoration: none;
-	border: 1px solid white;
 }
 
 /*投稿写真一覧*/
@@ -139,15 +121,58 @@
    -webkit-overflow-scrolling: touch;
 }
 
-.cafe-img-content{
-
-}
-
-.cafe-itm{
-
-}
 /*.cafe-favorite{
 	width: 80vw;
 	height: 80vh;
 	border: 1px solid red;
 }*/
+
+/*一覧表示*/
+.image-likes{
+	display:flex;
+	justify-content: center;
+	border: 1px solid red;
+	
+}
+
+.main-list{
+	display: flex;
+	border: 1px solid blue;
+	margin:80px 500px 0 0;
+}
+
+/*ヘッダーログイン時*/
+.rogin-main-top{
+	display:flex;
+	justify-content:flex-end;
+	margin: 10px;
+}
+
+.logout{
+	font-size: 20px;
+	text-decoration: none;
+	margin: 5px;
+}
+
+.user-nickname{
+	font-size: 25px;
+	text-decoration: none;
+
+	margin: 5px;
+}
+
+/*いいね総数ボタン*/
+.cafe-favorite{
+   display:inline-flex;
+}
+
+.favorite{
+	font-size:20px;
+	text-decoration: none;
+	margin: 5px;
+}
+
+/*いいねランキング*/
+.like-index{
+	color:black;
+}

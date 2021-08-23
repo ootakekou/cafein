@@ -78,3 +78,5 @@ gem 'geocoder'
 gem 'gon'
 
 gem 'gmaps4rails'
+
+gem "aws-sdk-s3", require: false

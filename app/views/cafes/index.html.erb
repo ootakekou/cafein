@@ -22,23 +22,32 @@
 
 <!--投稿写真全て表示-->
 <div class="image-likes">
+  <div class="shin-list">
+  新着
+  </div>
  <div class="index-list">
  <ul class="main-list">
+ <li class='cafe-main-item'>
  <% @cafes.each do |cafe|%>
- <li class='cafe-item'>
-<div class='cafe-img-content'>
-<%= link_to cafe_path(cafe.id), method: :get do %>
-<%= image_tag(cafe.image, class: "cafe-img") %>
-<% end %>
-</div>
-<% end %>
-</li>
-</ul>
+ <div>
+  <%= link_to cafe_path(cafe.id),class:'cafe-topbtn', method: :get do %>
+  <%= image_tag(cafe.image, class: "cafe-main-image") %>
+  </div>
+ <div class="cafe-drink-name">
+  <%= cafe.drink_name %>
+ </div>
+  <% end %>
+   <% end %>
+ </li>
+ </ul>
  </div>
 </div>
 
 <!--ユーザー投稿写真一覧表示-->
 <div class='image-main'>
+<div class="user-post">
+個人投稿写真
+</div>
 <div class='image-up'>
 <ul class='cafe-list'>
 <% @cafes.each do |cafe| %>

@@ -4,8 +4,6 @@
 	width: 100vw;
 }
 
-
-
 .backimage{	
   position: absolute;
 	top: -80px;
@@ -97,12 +95,18 @@
   width: 60%;
 }
 
-/*投稿写真一覧*/
+/*投稿ユーザーの写真一覧*/
+.image-main{
+	border: 1px solid black;
+}
 
 .image-up{
-	position: absolute;
-	bottom: 60px;
-	left: 200px;
+	display:flex;
+	border: 1px solid red;
+	margin-top: 20px;
+	overflow-x: auto;
+   white-space: nowrap;
+
 }
 
 .cafe-img {
@@ -116,29 +120,48 @@
   flex-wrap: wrap;
   justify-content:space-between;
 	align-items: flex-end;
-	overflow-x: auto;
-   white-space: nowrap;
-   -webkit-overflow-scrolling: touch;
 }
 
-/*.cafe-favorite{
-	width: 80vw;
-	height: 80vh;
-	border: 1px solid red;
-}*/
+.user-post{
+	color: black;
+}
 
-/*一覧表示*/
+/*全体一覧表示*/
 .image-likes{
 	display:flex;
-	justify-content: center;
-	border: 1px solid red;
-	
+	align-items: center;
+	justify-content:space-around;
+	flex-direction: column;
+}
+
+.cafe-main-item{
+  text-align: center;
+  overflow-y: scroll;
+  width: auto;
+  height: 70vh;
+}
+
+.shin-list{
+	color :black;
+	font-size:30px;
 }
 
 .main-list{
 	display: flex;
-	border: 1px solid blue;
-	margin:80px 500px 0 0;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.cafe-main-image{
+	width: 50%;
+	height: 50%;
+}
+
+.cafe-drink-name{
+	font-size: 15px;
+}
+.cafe-topbtn{
+	text-decoration: none;
 }
 
 /*ヘッダーログイン時*/

@@ -1,4 +1,4 @@
-class CafesController < ApplicationController
+class CavesController < ApplicationController
   def index
     @cafes = Cafe.order('created_at DESC').includes(:user)
   end

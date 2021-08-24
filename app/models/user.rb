@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :cafes
+  has_many :caves
   has_many :likes, dependent: :destroy
   has_many :liked_cafes, through: :likes, source: :cafe
 

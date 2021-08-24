@@ -1,6 +1,6 @@
 class CreateCafes < ActiveRecord::Migration[6.0]
   def change
-    create_table :cafes do |t|
+    create_table :caves do |t|
       t.string      :drink_name,    null: false
       t.text        :text,          null: false
       t.integer     :wifi

@@ -5,7 +5,7 @@
 <div class="cafe-new-main">
 <div class="weight-cafe-text">
  投稿写真
- <span>必須</span>
+ <span class="span">必須</span>
  </div>
 <div class="cafe-image">
 <p>
@@ -18,15 +18,15 @@
 <div class="cafe-new-text">
 <div class="weight-cafe-text">
 喫茶店名
-<span>必須</span>
+<span class="span">必須</span>
 </div>
- <%= f.text_area :drink_name, id: "drink_name", class: "cafe-text", placeholder:"例)喫茶Cafein" %>
+ <%= f.text_area :drink_name, id: "drink_name", class: "cafe-text-name", placeholder:"例)喫茶Cafein" %>
 </div>
 
 <div class="cafe-new-text">
 <div class="weight-cafe-text">
 投稿情報
-<span>必須</span>
+<span class="span">必須</span>
 </div>
 <%= f.text_area :text, id: "text", class: "cafe-text", placeholder:"飲み物、金額、店の情報などを記入してください。" %>
 </div>
@@ -76,9 +76,9 @@ Wifi<br>
 </div>
 
 <div class="cafe-address">
-<div class="addres-text">
+<div class="address-text">
 住所を記入してください。
-<span>必須</span>
+<span class="span">必須</span>
 </div>
 <%= f.text_field :address, id:"address", class:"cafe-addres-map", placeholder:"東京都"%>
 <input type="button" value="検索" onclick="codeAddress()">

@@ -199,3 +199,22 @@
 .like-index{
 	color:black;
 }
+
+/*検索機能*/
+.checkbox-list{
+	color:black;
+}
+
+.search-form {
+  text-align: center;
+  padding-top: 32px;
+}
+
+.search-form .search-input {
+  width: 40%;
+  margin-right: 10px;
+}
+
+.search-form .search-btn {
+  width: 20%;
+}

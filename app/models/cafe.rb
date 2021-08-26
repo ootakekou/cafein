@@ -10,4 +10,12 @@ class Cafe < ApplicationRecord
   validates :text, presence: true
   validates :address, presence: true
   validates :image, presence: true
+
+ # def self.search(search)
+  #  if search != ""
+  #    Cafe.where('wifi LIKE(?)', "%#{search}%").where('oshare LIKE(?)',"%#{search}%")
+  #  else
+  #    Cafe.all
+  #  end
+  #end
 end

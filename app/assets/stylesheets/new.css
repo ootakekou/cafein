@@ -1,13 +1,9 @@
 .new-main{
-  height:100vh;
+  height:auto;
   width:100vw;
   color: black;
   display: flex;
   justify-content: center;
-}
-
-.cafe-new-main{
-  border: 1px solid yellow;
 }
 
 .cafe-new-text{
@@ -17,49 +13,85 @@
 }
 
 .weight-cafe-text{
-  border: 1px solid red;
+  font-size: 15px;
   text-align: center;
+}
+.span{
+  color: red;
 }
 
 .cafe-image{
-  border: 1px solid black;
   text-align: center;
+  font-size: 15px;
+}
+
+.cafe-text-name{
+  color: black;
+  font-size: 14px;
 }
 
 .cafe-text{
-  color: white;
-  background-color: blue;
-  
+  color: black;
+  height: 30vh;
+  font-size: 14px;
+}
+
+.cafe-new-check{
+  font-size: 15px;
 }
 
 .cafe-check{
-  margin-top: 10px;
+  margin-top: 5px;
 	display: flex;
 }
 
+.check-box{
+  font-size: 15px;
+
+}
+
 .cafe-checkbox{
- margin-right: 100px;
+  margin-right: 90px;
+}
+
+.cafe-addres-map{
+  width: 70%;
 }
 
 .cafe-address{
-position: absolute;
-left: 500px;
+text-align: center;
+}
+
+.address-text{
+  font-size: 15px;
+  margin: 5px; 
 }
 
 #map {
   height: 300px;
-  width: 400px;
-  border:1px solid red;
+  width: 100%;
 }
 
 .cafe-buttton{
-  position: absolute;
-  bottom: 40px;
-  left: 620px;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  margin: 5px;
+  height: auto;
+ width: 100%;
 }
 
 .sell-btn{
   height: 50px;
   width: 150px;
+  margin-bottom: 10px;
   font-size: 20px;
 }
+
+.back-btn{
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  border: 1px solid black;
+}
+

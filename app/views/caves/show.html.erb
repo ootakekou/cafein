@@ -67,9 +67,14 @@
    </div>
    
 <div>
+
+    <% if current_user.id == @cafe.user_id %>
   <%= link_to "編集する", edit_cafe_path(@cafe.id), method: :get, class: "cafe-edit" %>
    <%= link_to "削除", cafe_path(@cafe.id), method: :delete, class:"cafe-destroy" %>
    <%=link_to "戻る", root_path, class:"back-btn" %>
+    <% else %>
+   <%=link_to "戻る", root_path, class:"back-btn" %>
+    <% end %>
    </div>
 </div>
 

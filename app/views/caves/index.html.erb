@@ -1,6 +1,20 @@
  <% if user_signed_in?  %>
 <header>
 <div class="rogin-main-top">
+<!--チェックボックス検索機能-->
+
+<div class="checkbox-list">
+<%#= form_with(url: search_caves_path, local: true, method: :get, class: "search-form") do |form| %>
+<%= search_form_for @p, url: search_caves_path do |form| %>
+<p>Wifi</p>
+<%= form.check_box :wifi_true, {checked_value: 1}, nil,  id: "wifi", class:"cafe-checkbox" %>
+<p>おしゃれ</p>
+<%= form.check_box :oshare_true, {checked_value: 1}, nil, id:"oshare", class:"cafe-checkbox" %>
+
+  <%= form.submit "検索", class: "search-btn" %>
+<% end %>
+
+</div>
 <!--いいね総数画面遷移-->
 <div class="cafe-favorite">
 <%= link_to "いいねランキング", cafe_likes_path(:cafe_id), method: :get, class:"favorite" %>

@@ -4,9 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :caves
+  has_many :caves, dependent: :destroy
   has_many :likes, dependent: :destroy
-  has_many :liked_cafes, through: :likes, source: :cafe
+  has_many :liked_cafes, through: :likes, source: :cafe, dependent: :destroy
 
   validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i }
   with_options presence: true do

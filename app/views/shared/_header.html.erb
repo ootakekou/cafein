@@ -1,0 +1,39 @@
+<header>
+<div class="rogin-main-top">
+<!--チェックボックス検索機能-->
+<div class="checkbox-list">
+<%= search_form_for @p, url: search_caves_path do |form| %>
+ <%= form.text_field :drink_name_cont, placeholder: "お店を検索する", class: "search-input" %>
+<details>
+<summary>カテゴリー検索</summary>
+<p>Wifi</p>
+<%= form.check_box :wifi_gteq,id: "wifi", class:"cafe-checkbox" %>
+<p>おしゃれ</p>
+<%= form.check_box :oshare_gteq, id:"oshare", class:"cafe-checkbox" %>
+<p>静か</p>
+<%= form.check_box :shizuka_gteq, id:"sizuka", class:"cafe-checkbox" %>
+<p>コンセント</p>
+<%= form.check_box :concent_gteq, id:"concent", class:"cafe-checkbox" %>
+<p>会話しやすい</p>
+<%= form.check_box :speak_gteq, id:"speak", class:"cafe-checkbox" %>
+<p>明るい</p>
+<%= form.check_box :bright_room_gteq, id:"bright_room", class:"cafe-checkbox" %>
+<p>暗い</p>
+<%= form.check_box :dark_room_gteq, id:"dark_room", class:"cafe-checkbox" %>
+<p>ペット可</p>
+<%= form.check_box :pet_gteq, id:"pet", class:"cafe-checkbox" %>
+<p>喫煙スペース</p>
+<%= form.check_box :smoke_room_gteq, id:"smoke_room", class:"cafe-checkbox" %>
+</details>
+  <%= form.submit "検索", class: "search-btn" %>
+<% end %>
+</div>
+<!--いいね総数画面遷移-->
+<div class="cafe-favorite">
+<%= link_to "いいねランキング", cafe_likes_path(:cafe_id), method: :get, class:"favorite" %>
+</div>
+<!--ユーザーログイン表示-->
+<%= link_to current_user.nickname, "#", class: "user-nickname" %>
+ <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"%>
+ </div>
+</header>

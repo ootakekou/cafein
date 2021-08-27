@@ -1,8 +1,8 @@
 class CavesController < ApplicationController
   before_action :set_cafe, only: [:show, :edit, :destroy, :update]
+  before_action :search_cafe, only:[:index, :search]
   def index
-    @cafes = Cafe.order('created_at DESC').includes(:user)
-    @p = Cafe.ransack(params[:q])   
+    @cafes = Cafe.order('created_at DESC').includes(:user) 
   end
 
   def new
@@ -43,8 +43,6 @@ class CavesController < ApplicationController
   end
 
   def search
-    #@caves = Cafe.search(params[:keyword])
-    @p = Cafe.ransack(params[:q])
     @results = @p.result
     end
 

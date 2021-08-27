@@ -1,9 +1,15 @@
+<div class="like-rank">
+いいねランキング
+</div>
 <div class="like-index">
-<% @cafes.each do |cafe| %>
+<% @cafes.each.with_index(1) do |cafe,i| %>
+<div class="rank">
+<%="#{i}位" %>
+</div>
 <%= cafe.drink_name %>
 <%= link_to cafe_path(cafe.id), method: :get do %>
-<%= image_tag(cafe.image, class:'cafe-img-box')%>
+<%= image_tag(cafe.image, class:'cafe-like-box')%>
 <% end %>
 <% end %>
+<%=link_to "戻る", root_path, class:"back-btn-rank" %>
 </div>
-<%=link_to "戻る", root_path, class:"back-btn" %>

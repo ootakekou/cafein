@@ -102,7 +102,6 @@
 
 .image-up{
 	display:flex;
-	border: 1px solid red;
 	margin-top: 20px;
 	overflow-x: auto;
    white-space: nowrap;
@@ -195,11 +194,6 @@
 	margin: 5px;
 }
 
-/*いいねランキング*/
-.like-index{
-	color:black;
-}
-
 /*検索機能*/
 .checkbox-list{
 	color:black;
@@ -217,4 +211,17 @@
 
 .search-form .search-btn {
   width: 20%;
+}
+
+.back-img{
+	width: auto;
+	height: auto;
+	background-image: url(kissa.jpeg);
+	background-size: cover;
+}
+
+.grad-index{
+	width: auto;
+	height: auto;
+	background-color: rgba(204, 171, 144, 0.521);
 }

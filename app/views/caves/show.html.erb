@@ -1,29 +1,31 @@
 
 <div class='cafe-show'>
-
   <div class='cafe-show-item'>
     <%= image_tag(@cafe.image, class:'cafe-img-box')%>
   </div>
   <div>
   いいね件数: <%= @cafe.likes.count %>
-<% if current_user.already_liked?(@cafe) %>
+ <% if current_user.already_liked?(@cafe) %>
   <%= button_to 'いいねを取り消す', cafe_like_path(@cafe), method: :delete %>
-<% else %>
+ <% else %>
   <%= button_to 'いいね', cafe_likes_path(@cafe) %>
-<% end %>
-</div>
-   <div class='cafe-show-item'>
+ <% end %>
+ </div>
+ 
+   <div class='cafe-show-drink_name'>
+   喫茶店名<br>
      <%= @cafe.drink_name %>
    </div>
-   <div class='cafe-show-item'>
+   <div class='cafe-show-text'>
+   内容<br>
     <%= @cafe.text %>
    </div>
    <div class="cafe-show-item">
     <%= form_with model:@cafe, method: :get, local: true do |f| %>
     <div class="cafe-check">
-    <div class="check-box">
+  <div class="check-box">
   Wifi<br>
-<%= f.check_box :wifi, id: "wifi", class:"cafe-checkbox", disabled:"disabled" %>
+   <%= f.check_box :wifi, id: "wifi", class:"cafe-checkbox", disabled:"disabled" %>
 </div>
 <div class="check-box-show" >
 おしゃれ<br>
@@ -53,10 +55,10 @@
 ペット可<br>
 <%= f.check_box :pet, id:"pet", class:"cafe-checkbox", disabled:"disabled" %>
 </div>
-<div class="check-box">
-喫煙スペース有<br>
-<%= f.check_box :smoke_room, id:"smoke_room", class:"cafe-checkbox", disabled:"disabled"  %>
-</div>
+ <div class="check-box">
+   喫煙スペース有<br>
+  <%= f.check_box :smoke_room, id:"smoke_room", class:"cafe-checkbox", disabled:"disabled"  %>
+ </div>
    <% end %>
    </div>
    </div>
@@ -66,15 +68,14 @@
    <div id="show_map">
    </div>
    
-<div>
-
-    <% if current_user.id == @cafe.user_id %>
-  <%= link_to "編集する", edit_cafe_path(@cafe.id), method: :get, class: "cafe-edit" %>
-   <%= link_to "削除", cafe_path(@cafe.id), method: :delete, class:"cafe-destroy" %>
+  <div>
+   <% if current_user.id == @cafe.user_id %>
+    <%= link_to "編集する", edit_cafe_path(@cafe.id), method: :get, class: "cafe-edit" %>
+    <%= link_to "削除", cafe_path(@cafe.id), method: :delete, class:"cafe-destroy" %>
+    <%=link_to "戻る", root_path, class:"back-btn" %>
+  <% else %>
    <%=link_to "戻る", root_path, class:"back-btn" %>
-    <% else %>
-   <%=link_to "戻る", root_path, class:"back-btn" %>
-    <% end %>
+  <% end %>
    </div>
 </div>
 

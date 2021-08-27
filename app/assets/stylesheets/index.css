@@ -105,7 +105,6 @@
 	margin-top: 20px;
 	overflow-x: auto;
    white-space: nowrap;
-
 }
 
 .cafe-img {
@@ -122,7 +121,8 @@
 }
 
 .user-post{
-	color: black;
+	color: white;
+	font-size: 15px;
 }
 
 /*全体一覧表示*/
@@ -141,8 +141,22 @@
 }
 
 .shin-list{
-	color :black;
+	color :white;
 	font-size:30px;
+}
+
+.cafe-shin-list{
+	margin: 10px;
+	width: 50vw;
+	height: auto;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,.12), 0 2px 3px 0 rgba(0,0,0,.22);
+	transition: .3s;
+	padding: 10px;
+}
+
+.cafe-shin-list:hover {
+	box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.075), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-4px);
 }
 
 .main-list{
@@ -158,47 +172,91 @@
 
 .cafe-drink-name{
 	font-size: 15px;
+	color: white;
 }
 .cafe-topbtn{
 	text-decoration: none;
 }
 
 /*ヘッダーログイン時*/
-.rogin-main-top{
+.login-main-top{
 	display:flex;
 	justify-content:flex-end;
-	margin: 10px;
+	padding: 10px;
 }
 
 .logout{
-	font-size: 20px;
+	font-size: 15px;
 	text-decoration: none;
-	margin: 5px;
+	margin: 6px;
+	color: white;
+}
+
+.logout:hover{
+	text-decoration: underline;
 }
 
 .user-nickname{
-	font-size: 25px;
+	font-size: 20px;
 	text-decoration: none;
-
-	margin: 5px;
+	margin: 6px;
+	color: white;
 }
 
 /*いいね総数ボタン*/
 .cafe-favorite{
-   display:inline-flex;
+   display:flex;
+	 justify-content:space-around;
+	 width: 30%;
+	 margin-left: 20px;
+	 margin-right: 20px;
 }
 
 .favorite{
-	font-size:20px;
+	font-size:15px;
+	margin: 6px;
+	color: white;
 	text-decoration: none;
-	margin: 5px;
+}
+
+.favorite:hover{
+	text-decoration: underline;
+}
+
+/*いいねしたもの*/
+.like-user{
+	font-size: 15px;
+	margin: 6px;color: white;
+	text-decoration: none;
+}
+
+.like-user:hover{
+	text-decoration: underline;
 }
 
 /*検索機能*/
 .checkbox-list{
-	color:black;
+	color:white;
+	cursor:pointer;
+  position: absolute;
+	margin-top: 10px;
+	left: 85%;
+	text-align: center;
 }
 
+#lists{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	}
+	
+	#lists:hover{
+	text-decoration: underline;
+	}
+	
+	.hidden{
+		display: none;
+	}
 .search-form {
   text-align: center;
   padding-top: 32px;
@@ -212,16 +270,16 @@
 .search-form .search-btn {
   width: 20%;
 }
-
+/*ログイン中の背景*/
 .back-img{
-	width: auto;
-	height: auto;
-	background-image: url(kissa.jpeg);
+	width: 100vw;
+	height: 130vh;
+  background-image: url(cafein.jpeg);
 	background-size: cover;
 }
 
 .grad-index{
-	width: auto;
-	height: auto;
-	background-color: rgba(204, 171, 144, 0.521);
+	width: 100vw;
+	height: 130vh;
+	background-color: rgba(209, 207, 205, 0.253);
 }

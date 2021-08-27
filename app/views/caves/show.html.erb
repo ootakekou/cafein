@@ -1,6 +1,6 @@
-
-<div class='cafe-show'>
-  <div class='cafe-show-item'>
+<div class="cafe-show">
+<div class="cafe-show-grad">
+  <div class="cafe-show-item">
     <%= image_tag(@cafe.image, class:'cafe-img-box')%>
   </div>
   <div>
@@ -18,7 +18,7 @@
    </div>
    <div class='cafe-show-text'>
    内容<br>
-    <%= @cafe.text %>
+    <%= safe_join(@cafe.text.split("\n"),tag(:br)) %>
    </div>
    <div class="cafe-show-item">
     <%= form_with model:@cafe, method: :get, local: true do |f| %>
@@ -72,10 +72,11 @@
    <% if current_user.id == @cafe.user_id %>
     <%= link_to "編集する", edit_cafe_path(@cafe.id), method: :get, class: "cafe-edit" %>
     <%= link_to "削除", cafe_path(@cafe.id), method: :delete, class:"cafe-destroy" %>
-    <%=link_to "戻る", root_path, class:"back-btn" %>
+    <%=link_to "戻る", root_path, class:"back-btn-show" %>
   <% else %>
-   <%=link_to "戻る", root_path, class:"back-btn" %>
+   <%=link_to "戻る", root_path, class:"back-btn-show" %>
   <% end %>
+   </div>
    </div>
 </div>
 

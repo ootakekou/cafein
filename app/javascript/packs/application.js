@@ -8,6 +8,8 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 require("../map")
+require("../list")
+require("../like")
 //= require underscore
 
 

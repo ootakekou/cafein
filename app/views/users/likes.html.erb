@@ -1,0 +1,8 @@
+<div class="like-index">
+<% current_user.liked_cafes.each do |like| %>
+<%= link_to cafe_path(like.id), method: :get do %>
+<%= image_tag(like.image, class:'cafe-like-box')%>
+<% end %>
+<% end %>
+</div>
+<%=link_to "戻る", root_path, class:"back-btn-rank" %>

@@ -2,11 +2,21 @@
   width: 100vw;
   height: auto;
   text-align: center;
-  color: black;
+  color: white;
+  background-image: url(cafein.jpeg);
+  background-size: cover;
+}
+
+.cafe-show-grad{
+  width: 100vw;
+	height: auto;
+	background-color: rgba(36, 35, 35, 0.253);
 }
 
 .cafe-show-item{
  text-align: center;
+ margin: auto;
+ width: 70%;
 }
 
 .cafe-show-drink_name{
@@ -18,8 +28,8 @@
 }
 
 .cafe-show-text{
-  margin-left: 140px;
-  width: 80%;
+  margin: auto;
+  width: 50%;
   height: 40vh;
   text-align: center;
   border: 1px solid black;
@@ -27,7 +37,7 @@
 }
 
 .cafe-img-box{
-  width: 33vh;
+  width: 25vw;
   height: 33vh;
 }
 
@@ -35,20 +45,27 @@
   display: inline-flex;
   justify-content: center;
   height: 320px;
-  width: 400px;
+  width: 70%;
   margin-top: 10px;
 }
 
 .cafe-edit{
   font-size:20px;
   margin: 0 10px;
+  text-decoration: none;
+  color:white;
 }
 
 .cafe-destroy{
 font-size: 20px;
 margin: 0 25px;
+text-decoration: none;
+color: white;
 }
 
-.cafe-checkbox{
-
+.back-btn-show{
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
 }

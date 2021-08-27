@@ -1,0 +1,56 @@
+/*いいねランキング*/
+.like-top{
+  position: absolute;
+ width: 100vw;
+ height: 120vh;
+ text-align: center;
+}
+
+.like-image{
+  background-image: url(cafein.jpeg);
+  background-size: cover;
+  width: 100vw;
+  height: 120vh;
+}
+.like-rank{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  
+}
+.like-index{
+  width: 70vw;
+  height: 100vh;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-size: 100%;
+  overflow-y: scroll;
+  margin-top: 15px;
+  margin-left: 200px;
+  font-size: 15px;
+}
+
+.like-index-grad{
+  width: 100vw;
+	height: 120vh;
+	background-color: rgba(209, 207, 205, 0.253);
+}
+
+.cafe-like-box{
+  width:30vw;
+  height: 40vh;
+}
+
+
+.rank{
+  font-size: 20px;
+}
+
+.back-btn-rank{
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}

@@ -146,7 +146,7 @@ body{
 	left: -20px;
 	right: -40px;
 	bottom: -40px;
-	width: 100%;
+	width: auto;
 	height: auto;
 	background-image: url(coffee.jpeg);
 	background-size: cover;

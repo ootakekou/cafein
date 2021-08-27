@@ -1,3 +1,6 @@
+<div class="like-top">
+<div class="like-image">
+<div class="like-index-grad">
 <div class="like-rank">
 いいねランキング
 </div>
@@ -6,10 +9,16 @@
 <div class="rank">
 <%="#{i}位" %>
 </div>
-<%= cafe.drink_name %>
+店名：
+<%= cafe.drink_name %><br>
+住所：
+<%= cafe.address%>
 <%= link_to cafe_path(cafe.id), method: :get do %>
 <%= image_tag(cafe.image, class:'cafe-like-box')%>
 <% end %>
 <% end %>
+</div>
 <%=link_to "戻る", root_path, class:"back-btn-rank" %>
+</div>
+</div>
 </div>

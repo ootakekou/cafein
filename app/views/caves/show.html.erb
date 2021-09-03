@@ -1,7 +1,10 @@
 <div class="cafe-show">
 <div class="cafe-show-grad">
+<div class="cafe-show-main">
   <div class="cafe-show-item">
-    <%= image_tag(@cafe.image, class:'cafe-img-box')%>
+ <% @cafe.images.each do |image| %>
+      <%= image_tag image, class:'images' %>
+      <% end %>
   </div>
   <div>
   いいね件数: <%= @cafe.likes.count %>
@@ -24,41 +27,41 @@
     <%= form_with model:@cafe, method: :get, local: true do |f| %>
     <div class="cafe-check">
   <div class="check-box">
-  Wifi<br>
-   <%= f.check_box :wifi, id: "wifi", class:"cafe-checkbox", disabled:"disabled" %>
-</div>
-<div class="check-box-show" >
-おしゃれ<br>
-<%= f.check_box :oshare, id:"oshare", class:'cafe-checkbox', disabled:"disabled" %>
+  <%= f.check_box :wifi, id: "check-list-wifi", class:"cafe-show-checkbox" %>
+<label for="check-list-wifi" class="show-check-wifi">Wifi</label>
 </div>
 <div class="check-box">
-静か<br>
-<%= f.check_box :shizuka, id:"shizuka", class:"cafe-checkbox", disabled:"disabled" %>
+<%= f.check_box :oshare, id:"check-list-oshare", class:"cafe-show-checkbox" %>
+<label for="check-list-oshare" class="show-check-oshare">おしゃれ</label>
 </div>
 <div class="check-box">
-コンセント<br>
-<%= f.check_box :concent, id:"concent", class:"cafe-checkbox", disabled:"disabled"  %>
+<%= f.check_box :shizuka, id:"check-list-shizuka", class:"cafe-show-checkbox" %>
+<label for="check-list-shizuka" class="show-check-shizuka">静か</label>
 </div>
 <div class="check-box">
-会話しやすい<br>
-<%= f.check_box :speak, id:"speak", class:"cafe-checkbox", disabled:"disabled"  %>
+<%= f.check_box :concent, id:"check-list-concent", class:"cafe-show-checkbox", disabled:"disabled" %>
+<label for="check-list-concent" class="show-check-concent">コンセント</label>
 </div>
 <div class="check-box">
-明るい<br>
-<%= f.check_box :bright_room, id:"bright_room", class:"cafe-checkbox", disabled:"disabled"  %>
+<%= f.check_box :speak, id:"check-list-speak", class:"cafe-show-checkbox", disabled:"disabled" %>
+<label for="check-list5" class="show-check-speak">会話</label>
 </div>
 <div class="check-box">
-暗い<br>
-<%= f.check_box :dark_room, id:"dark_room", class:"cafe-checkbox", disabled:"disabled"  %>
+<%= f.check_box :bright_room, id:"check-list-bright", class:"cafe-show-checkbox", disabled:"disabled" %>
+<label for="check-list6" class="show-check-bright">明るい</label>
 </div>
 <div class="check-box">
-ペット可<br>
-<%= f.check_box :pet, id:"pet", class:"cafe-checkbox", disabled:"disabled" %>
+<%= f.check_box :dark_room, id:"check-list-dark", class:"cafe-show-checkbox", disabled:"disabled" %>
+<label for="check-list7" class="show-check-dark">暗い</label>
 </div>
- <div class="check-box">
-   喫煙スペース有<br>
-  <%= f.check_box :smoke_room, id:"smoke_room", class:"cafe-checkbox", disabled:"disabled"  %>
- </div>
+<div class="check-box">
+<%= f.check_box :pet, id:"check-list-pet", class:"cafe-show-checkbox", disabled:"disabled" %>
+<label for="check-list8" class="show-check-pet">ペット可</label>
+</div>
+<div class="check-box">
+<%= f.check_box :smoke_room, id:"check-list-smoke", class:"cafe-show-checkbox", disabled:"disabled" %>
+<label for="check-list9" class="show-check-smoke">喫煙</label>
+</div>
    <% end %>
    </div>
    </div>
@@ -76,6 +79,7 @@
   <% else %>
    <%=link_to "戻る", root_path, class:"back-btn-show" %>
   <% end %>
+   </div>
    </div>
    </div>
 </div>

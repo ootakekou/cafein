@@ -31,7 +31,6 @@ class CavesController < ApplicationController
       render :edit
     end
   end
-
   
   def create
     @cafe = Cafe.new(create_params)
@@ -48,7 +47,7 @@ class CavesController < ApplicationController
 
   private
   def create_params
-    params.require(:cafe).permit(:drink_name, :text, :wifi, :oshare, :shizuka, :concent, :speak, :bright_room, :dark_room, :pet, :smoke_room, :address,:image).merge(user_id: current_user.id)
+    params.require(:cafe).permit(:drink_name, :text, :wifi, :oshare, :shizuka, :concent, :speak, :bright_room, :dark_room, :pet, :smoke_room, :address,images: []).merge(user_id: current_user.id)
   end
 
   def search_cafe

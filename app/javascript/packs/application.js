@@ -10,8 +10,11 @@ require("channels")
 require("../map")
 require("../list")
 require("../like")
-//= require underscore
-
+require('../preview')
+require('jquery')
+require("category.js")
+require("show.js")
+require("edit.js")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

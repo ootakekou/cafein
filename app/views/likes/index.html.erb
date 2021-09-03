@@ -14,7 +14,9 @@
 住所：
 <%= cafe.address%>
 <%= link_to cafe_path(cafe.id), method: :get do %>
-<%= image_tag(cafe.image, class:'cafe-like-box')%>
+<% cafe.images.each do |image| %>
+<%= image_tag image, class:'images' %>
+<% end %>
 <% end %>
 <% end %>
 </div>

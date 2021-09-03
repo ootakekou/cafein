@@ -1,0 +1,184 @@
+.new-main{
+  height:auto;
+  width:100vw;
+  color: black;
+  display: flex;
+  justify-content: center;
+  background-image: url(cafein.jpeg);
+  background-size: cover;
+}
+
+
+.new-main-side{
+  background-color: rgba(255, 255, 255, 0.342);
+  display: flex;
+  padding: 15px;
+}
+
+.cafe-new-main{
+  text-align: center;
+  overflow-x: scroll;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#image-list{
+  display: inline-flex;
+  width: 20vw;
+  height: 20vh;
+  justify-content: center;
+  }
+
+  #cafe-image{
+    margin: auto;
+    display: flex;
+  }
+  
+  .images{
+    height: auto;
+    width: auto;
+  }
+  
+  img{
+    max-width:30vw;
+    height:auto;
+    display:flex;
+  }
+  
+
+.cafe-new-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weight-cafe-text{
+  font-size: 15px;
+  text-align: center;
+}
+.span{
+  color: red;
+}
+
+.cafe-images{
+  text-align: center;
+  font-size: 15px;
+}
+
+.cafe-text-name{
+  color: black;
+  font-size: 14px;
+  width: 50%;
+  margin: auto;
+}
+
+.cafe-text{
+  color: black;
+  height: 30vh;
+  width: 50%;
+  margin: auto;
+  font-size: 14px;
+}
+
+.cafe-new-check{
+  font-size: 15px;
+}
+
+.cafe-check{
+  margin-top: 5px;
+	display: flex;
+}
+
+.check-box{
+}
+
+.cafe-checkbox{
+  margin-right: 90px;
+}
+
+.cafe-addres-map{
+  width: 70%;
+}
+
+.cafe-address{
+text-align: center;
+}
+
+.address-text{
+  font-size: 15px;
+  margin: 5px; 
+}
+
+#map {
+  height: 300px;
+  width: 70%;
+  margin:auto
+}
+
+.cafe-buttton{
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  margin: 5px;
+  height: auto;
+ width: 100%;
+}
+
+
+
+.back-btn{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  border: 1px solid black;
+  padding: 10px 15px;
+  background-image: -webkit-linear-gradient(left, #ff693c 40%, #562b7c 100%);
+  background-image: linear-gradient(90deg, #ff833c 40%, #562b7c 100%);
+}
+
+
+.back-btn:hover {
+  color: #fff;
+}
+
+.back-btn:hover:after {
+  opacity: 0;
+}
+
+
+.sell-btn{
+  font-size: 20px;
+ padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+  border-radius: 100vh;
+  color: #fff;
+  border-radius: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(40%, #ff943c),
+    to(#562b7c)
+  );
+  background-image: -webkit-linear-gradient(left, #ff693c 40%, #562b7c 100%);
+  background-image: linear-gradient(90deg, #ff833c 40%, #562b7c 100%);
+}
+
+.sell-btn:hover {
+  color: #fff;
+}
+
+.sell-btn:hover:after {
+  opacity: 0;
+}

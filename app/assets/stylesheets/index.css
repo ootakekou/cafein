@@ -70,59 +70,51 @@
 	width: 100vw;
 }
 
-
-.purchase-btn {
-  width: 120px;
-  background: white;
-  text-align: center;
-  border-radius: 4%;
-  bottom: 32px;
-  right: 32px;
-  position: fixed;
-  padding: 15px;
-	border:1px solid black;
-}
-
-.purchase-btn-text {
-  color: black;
-  display: block;
-  font-size: 18px;
-  text-decoration: none;
-  margin-bottom: 5px;
-}
-
-.purchase-btn-icon {
-  width: 60%;
-}
-
 /*投稿ユーザーの写真一覧*/
 .image-main{
-	border: 1px solid black;
+	width: auto;
+	height: auto;
+	margin: 10px 0 0 0;
+	justify-content:center;
+	flex-direction: column;
+	overflow-y: scroll;
 }
 
 .image-up{
-	display:flex;
 	margin-top: 20px;
-	overflow-x: auto;
-   white-space: nowrap;
+	overflow: auto;
+}
+
+.cafe-img-content{
+	display:inline-flex;
+	width: 50%;
+ height: auto;
 }
 
 .cafe-img {
-  width: 33vh;
-  height: 33vh;
-	margin-left: 20px;
+  width: 20vw;
+  height: 30vh;
+  display: inline-flex;
+	box-shadow: 10px -10px 25px rgba(2, 2, 2, 0.9);
 }
 
 .cafe-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-	align-items: flex-end;
+	width: 30vw;
+	height: 30vh;
+	display: inline-flex;
+	white-space: nowrap;
+}
+
+.cafe-item{
+	font-size: 20px;
+	margin-left: 20px;
 }
 
 .user-post{
 	color: white;
-	font-size: 15px;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 20px;
 }
 
 /*全体一覧表示*/
@@ -131,6 +123,13 @@
 	align-items: center;
 	justify-content:space-around;
 	flex-direction: column;
+}
+
+.images-index{
+	height: 50%;
+  display: inline-flex;
+  flex-direction: column;
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
 .cafe-main-item{
@@ -142,7 +141,7 @@
 
 .shin-list{
 	color :white;
-	font-size:30px;
+  font-size: 30px;
 }
 
 .cafe-shin-list{
@@ -150,13 +149,23 @@
 	width: 50vw;
 	height: auto;
 	box-shadow: 0 0 3px 0 rgba(0,0,0,.12), 0 2px 3px 0 rgba(0,0,0,.22);
-	transition: .3s;
+	transition: .6s;
 	padding: 10px;
 }
 
 .cafe-shin-list:hover {
 	box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.075), 0 0 5px rgba(0,0,0,.1);
-	transform: translateY(-4px);
+	transform: translateY(-7px);
+}
+
+.cafe-images-list{
+width: 30vw;
+height: auto;
+overflow-x: auto;
+white-space: nowrap;
+-webkit-overflow-scrolling: touch;
+margin:auto;
+
 }
 
 .main-list{
@@ -176,6 +185,12 @@
 }
 .cafe-topbtn{
 	text-decoration: none;
+}
+.images{
+	display:inline-flex;
+	margin-right: 10px;
+	width: 50vw;
+	height: 50vh;
 }
 
 /*ヘッダーログイン時*/
@@ -201,6 +216,21 @@
 	text-decoration: none;
 	margin: 6px;
 	color: white;
+}
+
+.user-nickname:hover{
+	text-decoration: underline;
+}
+
+.cafe-btn {
+	font-size: 15px;
+	text-decoration: none;
+	margin: 6px 10px;
+	color: white;
+}
+
+.cafe-btn:hover{
+	text-decoration: underline;
 }
 
 /*いいね総数ボタン*/
@@ -253,7 +283,218 @@
 	#lists:hover{
 	text-decoration: underline;
 	}
+
+	.cafe-index-checkbox{
+		display: none;
+	}
+
+	.index-check-wifi{
+		display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+	}
+
+	.index-check-wifi.isActive{
+		background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+		color: #000;
+	}
+
+	.index-check-wifi:hover{
+		background-color: #E2EDF9;
+	}
+
+	.index-check-oshare{
+		display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+	}
+
+	.index-check-oshare.isActive{
+		background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+		color: #000;
+	}
+
+	.index-check-oshare:hover{
+		background-color: #E2EDF9;
+	}
 	
+	.index-check-shizuka{
+		display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+	}
+
+	.index-check-shizuka.isActive{
+		background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+		color: #000;
+	}
+
+	.index-check-shizuka:hover{
+		background-color: #E2EDF9;
+	}
+
+	.index-check-concent{
+		display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+	}
+
+	.index-check-concent.isActive{
+		background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+		color: #000;
+	}
+
+	.index-check-concent:hover{
+		background-color: #E2EDF9;
+	}
+
+	.index-check-speak{
+		display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+	}
+
+	.index-check-speak.isActive{
+		background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+		color: #000;
+	}
+
+	.index-check-speak:hover{
+		background-color: #E2EDF9;
+	}
+	
+	.index-check-bright{
+		display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+	}
+
+	.index-check-bright.isActive{
+		background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+		color: #000;
+	}
+
+	.index-check-bright:hover{
+		background-color: #E2EDF9;
+	}
+
+	.index-check-dark{
+		display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+	}
+
+	.index-check-dark.isActive{
+		background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+		color: #000;
+	}
+
+	.index-check-dark:hover{
+		background-color: #E2EDF9;
+	}
+
+	.index-check-pet{
+		display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+	}
+
+	.index-check-pet.isActive{
+		background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+		color: #000;
+	}
+
+	.index-check-pet:hover{
+		background-color: #E2EDF9;
+	}
+
+	.index-check-smoke{
+		display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+	}
+
+	.index-check-smoke.isActive{
+		background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+		color: #000;
+	}
+
+	.index-check-smoke:hover{
+		background-color: #E2EDF9;
+	}
+
 	.hidden{
 		display: none;
 	}
@@ -273,7 +514,7 @@
 /*ログイン中の背景*/
 .back-img{
 	width: 100vw;
-	height: 130vh;
+	height: auto;
   background-image: url(cafein.jpeg);
 	background-size: cover;
 }

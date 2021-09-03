@@ -1,0 +1,42 @@
+.user-like-index{
+  background-image: url(cafein.jpeg);
+  background-size: cover;
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.like-title{
+  font-size: 20px;
+  color: black;
+}
+
+.images-like{
+  display:inline-flex;
+	width: 30vw;
+	height: 30vh;
+}
+
+.like-user-main{
+  height:35vh;
+  width: 30vw;
+  margin: auto;
+}
+
+.like-user-image{
+  width: 30vw;
+  height: 30vh;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.back-btn-like{
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+}

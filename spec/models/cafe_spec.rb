@@ -28,9 +28,9 @@ RSpec.describe Cafe, type: :model do
       expect(@cafe.errors.full_messages).to include("Address can't be blank")
    end
    it '画像が空の場合登録できない' do
-    @cafe.image = nil
+    @cafe.images = nil
     @cafe.valid?
-     expect(@cafe.errors.full_messages).to include("Image can't be blank")
+     expect(@cafe.errors.full_messages).to include("Images can't be blank")
    end
    it 'Userが紐付いていないと登録できない' do
     @cafe.user = nil

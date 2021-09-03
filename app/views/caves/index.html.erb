@@ -14,40 +14,40 @@
 </li>
 <ul  class="hidden" id="pull-down">
 <li>
-<p>Wifi</p>
-<%= form.check_box :wifi_gteq,id: "wifi", class:"cafe-checkbox" %>
+<%= form.check_box :wifi_gteq, id: "check-list-wifi", class:"cafe-index-checkbox" %>
+<label for="check-list-wifi" class="index-check-wifi">Wifi</label>
 </li>
 <li>
-<p>おしゃれ</p>
-<%= form.check_box :oshare_gteq, id:"oshare", class:"cafe-checkbox" %>
+<%= form.check_box :oshare_gteq, id:"check-list-oshare", class:"cafe-index-checkbox" %>
+<label for="check-list-oshare" class="index-check-oshare">おしゃれ</label>
 </li>
 <li>
-<p>静か</p>
-<%= form.check_box :shizuka_gteq, id:"sizuka", class:"cafe-checkbox" %>
+<%= form.check_box :shizuka_gteq, id:"check-list-shizuka", class:"cafe-index-checkbox" %>
+<label for="check-list-shizuka" class="index-check-shizuka">静か</label>
 </li>
 <li>
-<p>コンセント</p>
-<%= form.check_box :concent_gteq, id:"concent", class:"cafe-checkbox" %>
+<%= form.check_box :concent_gteq, id:"check-list-concent", class:"cafe-index-checkbox" %>
+<label for="check-list-concent" class="index-check-concent">コンセント</label>
 </li>
 <li>
-<p>会話しやすい</p>
-<%= form.check_box :speak_gteq, id:"speak", class:"cafe-checkbox" %>
+<%= form.check_box :speak_gteq, id:"check-list5", class:"cafe-index-checkbox" %>
+<label for="check-list5" class="index-check-speak">会話</label>
 </li>
 <li>
-<p>明るい</p>
-<%= form.check_box :bright_room_gteq, id:"bright_room", class:"cafe-checkbox" %>
+<%= form.check_box :bright_room_gteq, id:"check-list6", class:"cafe-index-checkbox" %>
+<label for="check-list6" class="index-check-bright">明るい</label>
 </li>
 <li>
-<p>暗い</p>
-<%= form.check_box :dark_room_gteq, id:"dark_room", class:"cafe-checkbox" %>
+<%= form.check_box :dark_room_gteq, id:"check-list7", class:"cafe-index-checkbox" %>
+<label for="check-list7" class="index-check-dark">暗い</label>
 </li>
 <li>
-<p>ペット可</p>
-<%= form.check_box :pet_gteq, id:"pet", class:"cafe-checkbox" %>
+<%= form.check_box :pet_gteq, id:"check-list8", class:"cafe-index-checkbox" %>
+<label for="check-list8" class="index-check-pet">ペット可</label>
 </li>
 <li>
-<p>喫煙スペース</p>
-<%= form.check_box :smoke_room_gteq, id:"smoke_room", class:"cafe-checkbox" %>
+<%= form.check_box :smoke_room_gteq, id:"check-list9", class:"cafe-index-checkbox" %>
+<label for="check-list9" class="index-check-smoke">喫煙</label>
 </li>
 </ul>
   <%= form.submit "検索", class: "search-btn" %>
@@ -64,8 +64,12 @@
  <li class='cafe-main-item'>
  <% @cafes.each do |cafe|%>
  <div class="cafe-shin-list">
+ <div class="cafe-images-list">
   <%= link_to cafe_path(cafe.id),class:'cafe-topbtn', method: :get do %>
-  <%= image_tag(cafe.image, class: "cafe-main-image") %>
+  <% cafe.images.each do |image| %>
+      <%= image_tag image, class:'images-index' %>
+      <% end %>
+  </div>
  <div class="cafe-drink-name">
   <%= cafe.drink_name %>
  </div>
@@ -89,10 +93,13 @@
 <ul class='cafe-list'>
 <% @cafes.each do |cafe| %>
 <li class='cafe-item'>
+<%= cafe.drink_name %>
 <div class='cafe-img-content'>
 <%= link_to cafe_path(cafe.id), method: :get do %>
 <% if current_user.id == cafe.user.id %>
-<%= image_tag(cafe.image, class: "cafe-img") %>
+ <% cafe.images.each do |image| %>
+      <%= image_tag image, class:'cafe-img' %>
+      <% end %>
 <% end %>
 </div>
 <% end %>

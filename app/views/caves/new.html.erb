@@ -1,5 +1,5 @@
 <div class="new-main">
-
+ <div class="new-main-side">
 <%= form_with model:@cafe, url:caves_path, local: true do |f| %>
 
 <div class="cafe-new-main">
@@ -7,11 +7,12 @@
  投稿写真
  <span class="span">必須</span>
  </div>
-<div class="cafe-image">
+<div class="cafe-images">
 <p>
  写真をアップロード
  </p>
-<%= f.file_field :image, id:"cafe-image" %>
+ <%= f.file_field :images, name: 'cafe[images][]', id:"cafe-image", class: "images" %>
+  <div id="image-list"> </div>
  </div>
 </div>
 
@@ -38,40 +39,40 @@
 </div>
 <div class="cafe-check">
 <div class="check-box">
-Wifi<br>
-<%= f.check_box :wifi, id: "wifi", class:"cafe-checkbox" %>
+<%= f.check_box :wifi, id: "check-list-wifi", class:"cafe-index-checkbox" %>
+<label for="check-list-wifi" class="index-check-wifi">Wifi</label>
 </div>
 <div class="check-box">
-おしゃれ<br>
-<%= f.check_box :oshare, id:"oshare", class:"cafe-checkbox" %>
+<%= f.check_box :oshare, id:"check-list-oshare", class:"cafe-index-checkbox" %>
+<label for="check-list-oshare" class="index-check-oshare">おしゃれ</label>
 </div>
 <div class="check-box">
-静か<br>
-<%= f.check_box :shizuka, id:"shizuka", class:"cafe-checkbox" %>
+<%= f.check_box :shizuka, id:"check-list-shizuka", class:"cafe-index-checkbox" %>
+<label for="check-list-shizuka" class="index-check-shizuka">静か</label>
 </div>
 <div class="check-box">
-コンセント<br>
-<%= f.check_box :concent, id:"concent", class:"cafe-checkbox" %>
+<%= f.check_box :concent, id:"check-list-concent", class:"cafe-index-checkbox" %>
+<label for="check-list-concent" class="index-check-concent">コンセント</label>
 </div>
 <div class="check-box">
-会話しやすい<br>
-<%= f.check_box :speak, id:"speak", class:"cafe-checkbox" %>
+<%= f.check_box :speak, id:"check-list5", class:"cafe-index-checkbox" %>
+<label for="check-list5" class="index-check-speak">会話</label>
 </div>
 <div class="check-box">
-明るい<br>
-<%= f.check_box :bright_room, id:"bright_room", class:"cafe-checkbox" %>
+<%= f.check_box :bright_room, id:"check-list6", class:"cafe-index-checkbox" %>
+<label for="check-list6" class="index-check-bright">明るい</label>
 </div>
 <div class="check-box">
-暗い<br>
-<%= f.check_box :dark_room, id:"dark_room", class:"cafe-checkbox" %>
+<%= f.check_box :dark_room, id:"check-list7", class:"cafe-index-checkbox" %>
+<label for="check-list7" class="index-check-dark">暗い</label>
 </div>
 <div class="check-box">
-ペット可<br>
-<%= f.check_box :pet, id:"pet", class:"cafe-checkbox" %>
+<%= f.check_box :pet, id:"check-list8", class:"cafe-index-checkbox" %>
+<label for="check-list8" class="index-check-pet">ペット可</label>
 </div>
 <div class="check-box">
-喫煙スペース有<br>
-<%= f.check_box :smoke_room, id:"smoke_room", class:"cafe-checkbox" %>
+<%= f.check_box :smoke_room, id:"check-list9", class:"cafe-index-checkbox" %>
+<label for="check-list9" class="index-check-smoke">喫煙</label>
 </div>
 </div>
 
@@ -90,4 +91,5 @@ Wifi<br>
 <%= f.submit "投稿する", class:"sell-btn" %>
 <%=link_to "戻る", root_path, class:"back-btn" %>
 <% end %>
+</div>
 </div>

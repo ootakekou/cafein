@@ -2,7 +2,9 @@
 <% @results.each do |cafe| %>
 <%= cafe.drink_name %>
 <%= link_to cafe_path(cafe.id), method: :get do %>
-<%= image_tag(cafe.image, class:'cafe-img-box')%>
+  <% cafe.images.each do |image| %>
+     <%= image_tag image, class:'images' %>
+  <% end %>
 <% end %>
 <% end %>
 </div>

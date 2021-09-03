@@ -1,0 +1,22 @@
+.edit-check-wifi{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.edit-check-wifi.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.edit-check-wifi:hover{
+  background-color: #E2EDF9;
+}

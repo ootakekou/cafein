@@ -1,8 +1,20 @@
-<div class="like-index">
-<% current_user.liked_cafes.each do |like| %>
-<%= link_to cafe_path(like.id), method: :get do %>
-<%= image_tag(like.image, class:'cafe-like-box')%>
-<% end %>
+
+<div class="like-title">
+いいねした投稿
+<%=link_to "戻る", root_path, class:"back-btn-like" %>
+</div>
+<div class="user-like-index">
+   <% current_user.liked_cafes.each do |like| %>
+  <div class="like-user-main">
+  <%= like.drink_name %>
+  <div class="like-user-image">
+   <%= link_to cafe_path(like.id), method: :get do %>
+   <% like.images.each do |image| %>
+      <%= image_tag image, class:'images-like' %>
+   <% end %>
+   </div>
+    </div>
+   <% end %>
 <% end %>
 </div>
-<%=link_to "戻る", root_path, class:"back-btn-rank" %>
+

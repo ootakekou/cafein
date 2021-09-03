@@ -13,6 +13,13 @@
 	background-color: rgba(36, 35, 35, 0.253);
 }
 
+.cafe-show-main{
+  width: 65%;
+  height: auto;
+  margin: auto;
+  padding: 10px 0;
+}
+
 .cafe-show-item{
  text-align: center;
  margin: auto;
@@ -22,7 +29,6 @@
 .cafe-show-drink_name{
   width: auto;
   height: 30%;
-
   text-align: center;
   font-size: 20px;
 }
@@ -68,4 +74,181 @@ color: white;
   text-decoration: none;
   margin-left: 10px;
   color: white;
+}
+
+.cafe-show-checkbox{
+  display: none;
+}
+
+
+.show-check-wifi{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.show-check-wifi.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+
+.show-check-oshare{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.show-check-oshare.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.show-check-shizuka{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.show-check-shizuka.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.show-check-concent{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.show-check-concent.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.show-check-speak{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.show-check-speak.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.show-check-bright{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.show-check-bright.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.show-check-dark{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.show-check-dark.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.show-check-pet{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.show-check-pet.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.show-check-smoke{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.show-check-smoke.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
 }

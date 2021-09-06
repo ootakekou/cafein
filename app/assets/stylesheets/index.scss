@@ -10,7 +10,7 @@
 	bottom: -60px;
 	width: 100%;
 	height: auto;
-	background-image:url("coffee.jpeg");
+	background-image:image-url("coffee.jpeg");
 	background-size:cover;
 	z-index: 1;
 }
@@ -521,7 +521,7 @@
 .back-img{
 	width: 100vw;
 	height: auto;
-  background-image: url(cafein.jpeg);
+  background-image: image-url("cafein.jpeg");
 	background-size: cover;
 }
 

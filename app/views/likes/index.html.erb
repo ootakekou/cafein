@@ -9,16 +9,21 @@
 <div class="rank">
 <%="#{i}位" %>
 </div>
+<div class="likes-rank">
 店名：
 <%= cafe.drink_name %><br>
 住所：
-<%= cafe.address%>
+<%= cafe.address%><br>
+<div class="images-rank-list">
 <%= link_to cafe_path(cafe.id), method: :get do %>
 <% cafe.images.each do |image| %>
-<%= image_tag image, class:'images' %>
+<%= image_tag image, class:'images-likes' %>
 <% end %>
+</div>
 <% end %>
+</div>
 <% end %>
+
 </div>
 <%=link_to "戻る", root_path, class:"back-btn-rank" %>
 </div>

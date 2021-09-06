@@ -1,20 +1,22 @@
-
 <div class="like-title">
 いいねした投稿
 <%=link_to "戻る", root_path, class:"back-btn-like" %>
-</div>
+
 <div class="user-like-index">
-   <% current_user.liked_cafes.each do |like| %>
+      <% current_user.liked_cafes.each do |like| %>
   <div class="like-user-main">
-  <%= like.drink_name %>
+  <div class="like-drink-name">
+      <%= like.drink_name %>
+      </div>
   <div class="like-user-image">
-   <%= link_to cafe_path(like.id), method: :get do %>
-   <% like.images.each do |image| %>
+      <%= link_to cafe_path(like.id), method: :get do %>
+      <% like.images.each do |image| %>
       <%= image_tag image, class:'images-like' %>
-   <% end %>
+      <% end %>
    </div>
-    </div>
-   <% end %>
-<% end %>
+   </div>
+      <% end %>
+      <% end %>
+</div>
 </div>
 

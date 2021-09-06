@@ -1,6 +1,5 @@
 /*いいねランキング*/
 .like-top{
-  position: absolute;
  width: 100vw;
  height: 120vh;
  text-align: center;
@@ -39,11 +38,34 @@
 	background-color: rgba(209, 207, 205, 0.253);
 }
 
-.cafe-like-box{
-  width:30vw;
-  height: 40vh;
+.likes-rank{
+  margin: auto;
+	width: 50vw;
+	height: auto;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,.12), 0 2px 3px 0 rgba(0,0,0,.22);
+	transition: .6s;
+	padding: 10px;
 }
 
+.likes-rank:hover{
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.075), 0 0 5px rgba(0,0,0,.1);
+	transform: translateY(-7px);
+}
+
+.images-rank-list{
+  width: 30vw;
+  height: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  margin:auto;
+}
+
+.images-likes{
+ margin: auto;
+ display: inline-flex;
+ flex-direction: column;
+}
 
 .rank{
   font-size: 20px;

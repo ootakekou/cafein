@@ -1,7 +1,7 @@
 <div class="cafe-show">
 <div class="cafe-show-grad">
 <div class="cafe-show-main">
-  <div class="cafe-show-item">
+  <div class="cafe-show-image">
  <% @cafe.images.each do |image| %>
       <%= image_tag image, class:'images' %>
       <% end %>
@@ -65,7 +65,7 @@
    <% end %>
    </div>
    </div>
-   <div class='cafe-show-item'>
+   <div class='cafe-show-address'>
    <%= @cafe.address %>
    </div>
    <div id="show_map">

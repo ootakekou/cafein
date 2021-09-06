@@ -1,9 +1,10 @@
 <div class="new-main">
+ <div class="new-main-side">
 <%= form_with model:@cafe, local: true do |f| %>
 <div class="cafe-new-main">
 <div class="weight-cafe-text">
  投稿写真
- <span>必須</span>
+ <span class="span">必須</span>
  </div>
 <div class="cafe-image">
 <p>
@@ -16,7 +17,7 @@
 <div class="cafe-new-text">
 <div class="weight-cafe-text">
 ドリンク名
-<span>必須</span>
+<span class="span">必須</span>
 </div>
  <%= f.text_area :drink_name, id: "drink_name", class: "cafe-text", placeholder:"例)ドリップコーヒー" %>
 </div>
@@ -24,7 +25,7 @@
 <div class="cafe-new-text">
 <div class="weight-cafe-text">
 投稿情報
-<span>必須</span>
+<span class="span">必須</span>
 </div>
 <%= f.text_area :text, id: "text", class: "cafe-text", placeholder:"喫茶店名、金額、雰囲気を記入してください。" %>
 </div>
@@ -36,47 +37,47 @@
 </div>
 <div class="cafe-check">
 <div class="check-box">
- <%= f.check_box :wifi, id: "check-edit-wifi", class:"cafe-show-checkbox" %>
-<label for="check-list-wifi" class="edit-check-wifi">Wifi</label>
+ <%= f.check_box :wifi, id: "check-edit-wifi", class:"cafe-edit-checkbox" %>
+<label for="check-edit-wifi" class="edit-check-wifi">Wifi</label>
 </div>
 <div class="check-box">
-<%= f.check_box :oshare, id:"check-list-oshare", class:"cafe-index-checkbox" %>
-<label for="check-list-oshare" class="index-check-oshare">おしゃれ</label>
+<%= f.check_box :oshare, id:"check-edit-oshare", class:"cafe-edit-checkbox" %>
+<label for="check-edit-oshare" class="edit-check-oshare">おしゃれ</label>
 </div>
 <div class="check-box">
-<%= f.check_box :shizuka, id:"check-list-shizuka", class:"cafe-index-checkbox" %>
-<label for="check-list-shizuka" class="index-check-shizuka">静か</label>
+<%= f.check_box :shizuka, id:"check-edit-shizuka", class:"cafe-edit-checkbox" %>
+<label for="check-edit-shizuka" class="edit-check-shizuka">静か</label>
 </div>
 <div class="check-box">
-<%= f.check_box :concent, id:"check-list-concent", class:"cafe-index-checkbox" %>
-<label for="check-list-concent" class="index-check-concent">コンセント</label>
+<%= f.check_box :concent, id:"check-edit-concent", class:"cafe-edit-checkbox" %>
+<label for="check-edit-concent" class="edit-check-concent">コンセント</label>
 </div>
 <div class="check-box">
-<%= f.check_box :speak, id:"check-list5", class:"cafe-index-checkbox" %>
-<label for="check-list5" class="index-check-speak">会話</label>
+<%= f.check_box :speak, id:"check-edit-speak", class:"cafe-edit-checkbox" %>
+<label for="check-edit-speak" class="edit-check-speak">会話</label>
 </div>
 <div class="check-box">
-<%= f.check_box :bright_room, id:"check-list6", class:"cafe-index-checkbox" %>
-<label for="check-list6" class="index-check-bright">明るい</label>
+<%= f.check_box :bright_room, id:"check-edit-bright", class:"cafe-edit-checkbox" %>
+<label for="check-edit-bright" class="edit-check-bright">明るい</label>
 </div>
 <div class="check-box">
-<%= f.check_box :dark_room, id:"check-list7", class:"cafe-index-checkbox" %>
-<label for="check-list7" class="index-check-dark">暗い</label>
+<%= f.check_box :dark_room, id:"check-edit-dark", class:"cafe-edit-checkbox" %>
+<label for="check-edit-dark" class="edit-check-dark">暗い</label>
 </div>
 <div class="check-box">
-<%= f.check_box :pet, id:"check-list8", class:"cafe-index-checkbox" %>
-<label for="check-list8" class="index-check-pet">ペット可</label>
+<%= f.check_box :pet, id:"check-edit-pet", class:"cafe-edit-checkbox" %>
+<label for="check-edit-pet" class="edit-check-pet">ペット可</label>
 </div>
 <div class="check-box">
-<%= f.check_box :smoke_room, id:"check-list9", class:"cafe-index-checkbox" %>
-<label for="check-list9" class="index-check-smoke">喫煙</label>
+<%= f.check_box :smoke_room, id:"check-edit-smoke", class:"cafe-edit-checkbox" %>
+<label for="check-edit-smoke" class="edit-check-smoke">喫煙</label>
 </div>
 </div>
 
 <div class="cafe-address">
 <div class="addres-text">
 住所を記入してください。
-<span>必須</span>
+<span class="span">必須</span>
 </div>
 <%= f.text_field :address, id:"address", class:"cafe-addres-map", placeholder:"東京都"%>
 <input type="button" value="検索" onclick="codeAddress()">
@@ -85,7 +86,8 @@
 </div>
 
 <div class="cafe-buttton">
-<%= f.submit "投稿する", class:"sell-btn" %>
+<%= f.submit "変更", class:"sell-btn" %>
 <%=link_to "戻る", cafe_path(@cafe.id), class:"back-btn" %>
 <% end %>
+</div>
 </div>

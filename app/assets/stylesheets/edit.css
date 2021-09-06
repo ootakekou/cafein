@@ -1,3 +1,7 @@
+.cafe-edit-checkbox{
+  display: none;
+}
+
 .edit-check-wifi{
 	display: block; 
     float: left; 
@@ -18,5 +22,190 @@
 }
 
 .edit-check-wifi:hover{
+  background-color: #E2EDF9;
+}
+
+
+.edit-check-oshare{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.edit-check-oshare.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.edit-check-oshare:hover{
+  background-color: #E2EDF9;
+}
+
+.edit-check-shizuka{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.edit-check-shizuka.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.edit-check-shizuka:hover{
+  background-color: #E2EDF9;
+}
+
+.edit-check-concent{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.edit-check-concent.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.edit-check-concent:hover{
+  background-color: #E2EDF9;
+}
+
+.edit-check-speak{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.edit-check-speak.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.edit-check-speak:hover{
+  background-color: #E2EDF9;
+}
+
+.edit-check-bright{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.edit-check-bright.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.edit-check-bright:hover{
+  background-color: #E2EDF9;
+}
+
+.edit-check-dark{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.edit-check-dark.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.edit-check-dark:hover{
+  background-color: #E2EDF9;
+}
+
+.edit-check-pet{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.edit-check-pet.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.edit-check-pet:hover{
+  background-color: #E2EDF9;
+}
+
+.edit-check-smoke{
+	display: block; 
+    float: left; 
+    width: 60px;
+    height: 40px; 
+    text-align: center; 
+    line-height: 45px; 
+    padding-left: 5px; 
+    padding-right: 5px;
+    cursor: pointer;
+    border: 1px solid #006DD9;
+    border-radius: 5px; 
+}
+
+.edit-check-smoke.isActive{
+  background: linear-gradient(45deg,#bdb9ff,#67b8ff);
+  color: #000;
+}
+
+.edit-check-smoke:hover{
   background-color: #E2EDF9;
 }

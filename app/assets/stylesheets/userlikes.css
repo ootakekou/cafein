@@ -1,42 +1,48 @@
-.user-like-index{
-  background-image: url(cafein.jpeg);
-  background-size: cover;
-  width: auto;
-  height: auto;
+.like-title{
   font-size: 20px;
+  color: white;
+  background-image: url(cafein.jpeg);
   text-align: center;
+  background-size: cover;
+}
+
+.user-like-index{
+  background-size: cover;
+  width: 100vw;
+  height: 130vh;
+  font-size: 20px;
   display: flex;
   flex-wrap:wrap;
 }
 
-.like-title{
-  font-size: 20px;
-  color: black;
-}
-
 .images-like{
   display:inline-flex;
-	width: 30vw;
+	width: 22vw;
 	height: 30vh;
 }
 
 .like-user-main{
   height:35vh;
   width: 30vw;
-  margin: auto;
+  margin-top: 10px;
+}
+
+.like-drink-name{
+margin-bottom: 10px;
 }
 
 .like-user-image{
-  width: 30vw;
+  width: 22vw;
   height: 30vh;
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  margin: auto;
+  box-shadow: 10px -10px 20px rgb(19, 18, 18);
 }
 
 .back-btn-like{
   font-size: 20px;
-  text-align: center;
   text-decoration: none;
-  color:black;
+  color:white;
 }

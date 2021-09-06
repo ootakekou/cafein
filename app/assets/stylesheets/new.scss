@@ -27,7 +27,7 @@
 #image-list{
   display: inline-flex;
   width: 20vw;
-  height: 20vh;
+  height: 30vh;
   justify-content: center;
   }
 
@@ -74,12 +74,20 @@
   margin: auto;
 }
 
+.cafe-text-name::placeholder{
+  color: gray;
+}
+
 .cafe-text{
   color: black;
   height: 30vh;
   width: 50%;
   margin: auto;
   font-size: 14px;
+}
+
+.cafe-text::placeholder{
+  color: gray;
 }
 
 .cafe-new-check{
@@ -91,15 +99,14 @@
 	display: flex;
 }
 
-.check-box{
-}
-
 .cafe-checkbox{
   margin-right: 90px;
 }
 
 .cafe-addres-map{
   width: 70%;
+
+  font-size: 15px;
 }
 
 .cafe-address{
@@ -129,14 +136,17 @@ text-align: center;
 
 
 .back-btn{
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  margin-left: 10px;
-  border: 1px solid black;
-  padding: 10px 15px;
-  background-image: -webkit-linear-gradient(left, #ff693c 40%, #562b7c 100%);
-  background-image: linear-gradient(90deg, #ff833c 40%, #562b7c 100%);
+  background: rgb(97, 97, 97); 
+  color: #fff; 
+  padding: 10px 30px; 
+  text-decoration: none; 
+  border-radius: 30px; 
+  font-size: 15px;
+  transition-property: opacity;
+ -webkit-transition-property: opacity;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+  margin-left: 30px;
 }
 
 
@@ -144,41 +154,20 @@ text-align: center;
   color: #fff;
 }
 
-.back-btn:hover:after {
-  opacity: 0;
-}
-
 
 .sell-btn{
-  font-size: 20px;
- padding: 10px 20px;
-  cursor: pointer;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  color: #212529;
-  border-radius: 0.5rem;
-  border-radius: 100vh;
-  color: #fff;
-  border-radius: 0;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(40%, #ff943c),
-    to(#562b7c)
-  );
-  background-image: -webkit-linear-gradient(left, #ff693c 40%, #562b7c 100%);
-  background-image: linear-gradient(90deg, #ff833c 40%, #562b7c 100%);
+  background: rgb(97, 97, 97); 
+  color: #fff; 
+  padding: 10px 30px; 
+  text-decoration: none; 
+  border-radius: 30px; 
+  font-size: 15px;
+  transition-property: opacity;
+ -webkit-transition-property: opacity;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
 }
 
 .sell-btn:hover {
   color: #fff;
-}
-
-.sell-btn:hover:after {
-  opacity: 0;
 }

@@ -93,7 +93,7 @@
 <ul class='cafe-list'>
 <% @cafes.each do |cafe| %>
 <li class='cafe-item'>
-<%= cafe.drink_name %>
+<%= cafe.drink_name %><br>
 <div class='cafe-img-content'>
 <%= link_to cafe_path(cafe.id), method: :get do %>
 <% if current_user.id == cafe.user.id %>

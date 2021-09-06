@@ -10,7 +10,7 @@
 .cafe-show-grad{
   width: 100vw;
 	height: auto;
-	background-color: rgba(36, 35, 35, 0.253);
+	background-color: rgba(85, 83, 83, 0.164);
 }
 
 .cafe-show-main{
@@ -20,11 +20,27 @@
   padding: 10px 0;
 }
 
+.cafe-show-image{
+  width:40%;
+  display: inline-flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
 .cafe-show-item{
  text-align: center;
  margin: auto;
  width: 70%;
 }
+
+.cafe-show-address{
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  font-size: 20px;
+}
+
 
 .cafe-show-drink_name{
   width: auto;
@@ -53,27 +69,6 @@
   height: 320px;
   width: 70%;
   margin-top: 10px;
-}
-
-.cafe-edit{
-  font-size:20px;
-  margin: 0 10px;
-  text-decoration: none;
-  color:white;
-}
-
-.cafe-destroy{
-font-size: 20px;
-margin: 0 25px;
-text-decoration: none;
-color: white;
-}
-
-.back-btn-show{
-  font-size: 20px;
-  text-decoration: none;
-  margin-left: 10px;
-  color: white;
 }
 
 .cafe-show-checkbox{
@@ -252,3 +247,25 @@ color: white;
   background: linear-gradient(45deg,#bdb9ff,#67b8ff);
   color: #000;
 }
+
+.cafe-edit{
+  font-size:20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color:white;
+}
+
+.cafe-destroy{
+font-size: 20px;
+margin: 0 25px;
+text-decoration: none;
+color: white;
+}
+
+.back-btn-show{
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+}
+

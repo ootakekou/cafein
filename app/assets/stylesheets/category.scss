@@ -1,25 +1,17 @@
-/*いいねランキング*/
-.like-top{
- width: 100vw;
- height: 120vh;
- text-align: center;
+.search-top{
+  width: 100vw;
+  height: 120vh;
+  text-align: center;
 }
 
-.like-image{
+.search-main{
   background-image: image-url("cafein.jpeg");
   background-size: cover;
   width: 100vw;
   height: 120vh;
 }
 
-.like-rank{
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  padding-top: 10px;
-}
-
-.like-index{
+.search-main-top{
   width: 70vw;
   height: 100vh;
   color:white;
@@ -33,13 +25,13 @@
   font-size: 15px;
 }
 
-.like-index-grad{
+.search-main-grad{
   width: 100vw;
-	height: auto;
+	height: 120vh;
 	background-color: rgba(209, 207, 205, 0.253);
 }
 
-.likes-rank{
+.search-rank{
   margin: auto;
 	width: 50vw;
 	height: auto;
@@ -48,12 +40,12 @@
 	padding: 10px;
 }
 
-.likes-rank:hover{
+.search-rank:hover{
   box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.075), 0 0 5px rgba(0,0,0,.1);
 	transform: translateY(-7px);
 }
 
-.images-rank-list{
+.search-rank-list{
   width: 30vw;
   height: auto;
   overflow-x: auto;
@@ -62,17 +54,13 @@
   margin:auto;
 }
 
-.images-likes{
- margin: auto;
- display: inline-flex;
- flex-direction: column;
+.images-search{
+  margin: auto;
+  display: inline-flex;
+  flex-direction: column;
 }
 
-.rank{
-  font-size: 20px;
-}
-
-.back-btn-rank{
+.back-btn-search{
   font-size: 20px;
   text-align: center;
   text-decoration: none;

@@ -99,7 +99,7 @@ Googleマップも実装しているのでどの場所かすぐにわかるよ�
 
 
 ## ER図
-[![Image from Gyazo](https://i.gyazo.com/8e66096396d4e6c775be68aa12d014d6.png)](https://gyazo.com/8e66096396d4e6c775be68aa12d014d6)
+[![Image from Gyazo](https://i.gyazo.com/d912f276427c81f3ac06f51c8a654612.png)](https://gyazo.com/d912f276427c81f3ac06f51c8a654612)
 
 ## ローカルでの動作方法
 $ git clone https://github.com/ootakekou/cafein.git

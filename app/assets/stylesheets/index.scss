@@ -92,6 +92,7 @@
 	overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.849);
 }
 
 .img-index-list{
@@ -136,7 +137,7 @@
 	height: 50%;
   display: inline-flex;
   flex-direction: column;
-	box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+
 }
 
 .cafe-main-item{
@@ -504,19 +505,10 @@
 	.hidden{
 		display: none;
 	}
-.search-form {
-  text-align: center;
-  padding-top: 32px;
-}
 
-.search-form .search-input {
-  width: 40%;
-  margin-right: 10px;
-}
+	.search-btn{
+	}
 
-.search-form .search-btn {
-  width: 20%;
-}
 /*ログイン中の背景*/
 .back-img{
 	width: 100vw;

@@ -6,9 +6,9 @@
 
 <!--チェックボックス検索機能-->
 <div class="checkbox-list">
-お店の名前を入力してね
+店名又は住所を入力
 <%= search_form_for @p, url: search_caves_path do |form| %>
- <%= form.text_field :drink_name_cont, placeholder: "お店を検索する", class: "search-input" %>
+ <%= form.text_field :drink_name_or_address_cont, class: "search-input" %>
 <li id="lists">
 カテゴリー検索
 </li>
@@ -92,11 +92,11 @@
 <div class='image-up'>
 <ul class='cafe-list'>
 <% @cafes.each do |cafe| %>
+<% if current_user.id == cafe.user.id %>
 <li class='cafe-item'>
 <%= cafe.drink_name %><br>
 <div class='cafe-img-content'>
 <%= link_to cafe_path(cafe.id), method: :get do %>
-<% if current_user.id == cafe.user.id %>
  <% cafe.images.each do |image| %>
       <%= image_tag image, class:'cafe-img' %>
       <% end %>

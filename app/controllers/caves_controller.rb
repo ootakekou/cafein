@@ -26,7 +26,7 @@ class CavesController < ApplicationController
 
   def update
     if @cafe.update(create_params)
-      redirect_to root_path
+      redirect_to cafe_path
     else
       render :edit
     end

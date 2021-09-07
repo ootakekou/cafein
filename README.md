@@ -39,7 +39,7 @@ Cafe-In完全ユーザー登録制のアプリとなっており、ユーザー�
 ### 新規登録画面
 
 全て記入するとトップページに遷移します。
-<a href="https://gyazo.com/bc94328261cb8e68b05bc11f9b481cae"><img src="https://i.gyazo.com/bc94328261cb8e68b05bc11f9b481cae.gif" alt="Image from Gyazo" width="1000"/></a>
+![bc94328261cb8e68b05bc11f9b481cae](https://user-images.githubusercontent.com/87419421/132305981-c1bb5754-fcb1-4102-90ed-0cd3d51f146a.gif)
 
 ### ログイン画面
 

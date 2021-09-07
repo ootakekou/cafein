@@ -4,9 +4,13 @@
 
 ### **http://176.32.81.79/**
 
-## Password $& ID
+## テスト用アカウント
+ログインメール：test@test.jp
+パスワード：ko1994
+## BASIC認証
+ID:kou
+パスワード：0726
 
-### Password:0726 ID:kou
 
 [![Image from Gyazo](https://i.gyazo.com/8c14b459783fde7f9b1db950389c247f.jpg)](https://gyazo.com/8c14b459783fde7f9b1db950389c247f)
 

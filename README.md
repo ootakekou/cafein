@@ -31,21 +31,46 @@ Cafe-In完全ユーザー登録制のアプリとなっており、ユーザー�
 コメント機能
 
 ## 実装した機能
-### 新規登録/ログイン機能
 ユーザー登録していない時の画面になります。
 [![Image from Gyazo](https://i.gyazo.com/8c14b459783fde7f9b1db950389c247f.jpg)](https://gyazo.com/8c14b459783fde7f9b1db950389c247f)
 
-新規登録画面
+### 新規登録画面
+
 全て記入するとトップページに遷移します。
 [![Image from Gyazo](https://i.gyazo.com/bc94328261cb8e68b05bc11f9b481cae.gif)](https://gyazo.com/bc94328261cb8e68b05bc11f9b481cae)
 
-ログイン画面
+### ログイン画面
+
 メールアドレスとパスワードを入力するとトップページへ遷移します。
 [![Image from Gyazo](https://i.gyazo.com/0d597caa7b187d554baa64c61abf24ca.gif)](https://gyazo.com/0d597caa7b187d554baa64c61abf24ca)
 
-新規投稿
+### 新規投稿
 必須項目は必ず記入し、任意はそのお店に合っている項目をチェックします。
 [![Image from Gyazo](https://i.gyazo.com/9e929094a4e5c3c431b984ec741f9422.gif)](https://gyazo.com/9e929094a4e5c3c431b984ec741f9422)
+
+### 編集機能
+間違ってしまっても編集機能で変更することができます。
+
+編集機能と消去機能は投稿したユーザーのみ可能です。
+[![Image from Gyazo](https://i.gyazo.com/5bc4d70b053a3c8670e5a00cd1ec4512.gif)](https://gyazo.com/5bc4d70b053a3c8670e5a00cd1ec4512)
+
+### いいね機能
+いいねボタンを押すとお気に入り登録することができます。
+[![Image from Gyazo](https://i.gyazo.com/dbcad2d844bb7aa1f1b0186af9f8eb7a.gif)](https://gyazo.com/dbcad2d844bb7aa1f1b0186af9f8eb7a)
+
+### いいねした投稿
+いいねを押した投稿については「いいねした投稿」で閲覧することができます。
+[![Image from Gyazo](https://i.gyazo.com/6d329576a3d2c66a7f757174e38a0531.gif)](https://gyazo.com/6d329576a3d2c66a7f757174e38a0531)
+
+### 検索機能
+店名、住所検索とカテゴリー検索があります。
+別々で使用することもできますが、場所を絞ってカテゴリーで検索すrこともできます。
+
+・カテゴリー検索
+[![Image from Gyazo](https://i.gyazo.com/7b63ec758bd769bade8e809946c05510.gif)](https://gyazo.com/7b63ec758bd769bade8e809946c05510)
+
+・・住所とカテゴリー検索
+[![Image from Gyazo](https://i.gyazo.com/a0585829b9dc378ff7c44146c448a877.gif)](https://gyazo.com/a0585829b9dc378ff7c44146c448a877)
 
 
 ## users テーブル

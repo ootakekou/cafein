@@ -108,6 +108,10 @@ Googleマップも実装しているのでどの場所かすぐにわかるよ�
 
 ・heic拡張子対応機能
 
+・Instagramと連携機能
+
+・動画表示機能
+
 
 ## ER図
 [![Image from Gyazo](https://i.gyazo.com/d912f276427c81f3ac06f51c8a654612.png)](https://gyazo.com/d912f276427c81f3ac06f51c8a654612)

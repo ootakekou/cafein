@@ -50,6 +50,11 @@ Cafe-In完全ユーザー登録制のアプリとなっており、ユーザー�
 必須項目は必ず記入し、任意はそのお店に合っている項目をチェックします。
 [![Image from Gyazo](https://i.gyazo.com/9e929094a4e5c3c431b984ec741f9422.gif)](https://gyazo.com/9e929094a4e5c3c431b984ec741f9422)
 
+### 詳細機能
+写真をクリックすればお店の情報や住所がわかります。
+
+Googleマップも実装しているのでどの場所かすぐにわかるようになっています。
+[![Image from Gyazo](https://i.gyazo.com/641e3ee4197d90dc8131814a303ba5f9.gif)](https://gyazo.com/641e3ee4197d90dc8131814a303ba5f9)
 ### 編集機能
 間違ってしまっても編集機能で変更することができます。
 
@@ -73,6 +78,30 @@ Cafe-In完全ユーザー登録制のアプリとなっており、ユーザー�
 
 ・住所とカテゴリー検索
 [![Image from Gyazo](https://i.gyazo.com/a0585829b9dc378ff7c44146c448a877.gif)](https://gyazo.com/a0585829b9dc378ff7c44146c448a877)
+
+### 実装予定の機能
+・コメント機能
+
+・フォロー機能
+
+## ER図
+[![Image from Gyazo](https://i.gyazo.com/8e66096396d4e6c775be68aa12d014d6.png)](https://gyazo.com/8e66096396d4e6c775be68aa12d014d6)
+
+## ローカルでの動作方法
+$ git clone https://github.com/ootakekou/cafein.git
+
+$ cd cafein
+
+$ bundle install
+
+$ rails db:create
+
+$ rails db:migrate
+
+$ rails s
+
+→http://localhost:3000
+
 
 
 ## users テーブル

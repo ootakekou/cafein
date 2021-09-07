@@ -60,7 +60,7 @@ Googleマップも実装しているのでどの場所かすぐにわかるよ�
 間違ってしまっても編集機能で変更することができます。
 
 編集機能と消去機能は投稿したユーザーのみ可能です。
-![9e929094a4e5c3c431b984ec741f9422](https://user-images.githubusercontent.com/87419421/132307130-90a967d0-d0a7-4b2a-abac-fb10bf7c3f2d.gif)
+![4d2a2e064933b0ec1a60434a9332d17a](https://user-images.githubusercontent.com/87419421/132310109-60994e08-6ba2-40e1-9c8f-ebfd075cbc2c.gif)
 
 ### いいね機能
 いいねボタンを押すとお気に入り登録することができます。
@@ -69,6 +69,10 @@ Googleマップも実装しているのでどの場所かすぐにわかるよ�
 ### いいねした投稿
 いいねを押した投稿については「いいねした投稿」で閲覧することができます。
 ![6d329576a3d2c66a7f757174e38a0531](https://user-images.githubusercontent.com/87419421/132307683-3f6d4c1b-00d3-467b-bb7f-3223ee140b46.gif)
+
+## いいねランキング機能
+いいねの総数が高い順に表示されます。
+![17eb897284c5f2238143bda117fbe6b4](https://user-images.githubusercontent.com/87419421/132311098-f982e63d-9d96-4732-91ef-98eb6fef1e44.gif)
 
 ### 検索機能
 店名、住所検索とカテゴリー検索があります。

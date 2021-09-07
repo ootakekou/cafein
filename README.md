@@ -1,5 +1,13 @@
 # Cafe-In
 
+## 🌐App URL
+
+### **http://176.32.81.79/**
+
+## Password $& ID
+
+### Password:0726 ID:kou
+
 [![Image from Gyazo](https://i.gyazo.com/8c14b459783fde7f9b1db950389c247f.jpg)](https://gyazo.com/8c14b459783fde7f9b1db950389c247f)
 
 ## users テーブル

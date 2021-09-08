@@ -1,4 +1,5 @@
 class CavesController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_cafe, only: [:show, :edit, :destroy, :update]
   before_action :search_cafe, only:[:index, :search]
   def index

@@ -3,7 +3,7 @@
 <div class="cafe-show-main">
   <div class="cafe-show-image">
  <% @cafe.images.each do |image| %>
-      <%= image_tag image, class:'images' %>
+      <%= image_tag image.variant(resize: '500x500'), class:'images' %>
       <% end %>
   </div>
   <div>

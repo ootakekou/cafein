@@ -17,7 +17,7 @@
 <div class="images-rank-list">
 <%= link_to cafe_path(cafe.id), method: :get do %>
 <% cafe.images.each do |image| %>
-<%= image_tag image, class:'images-likes' %>
+<%= image_tag image.variant(resize: '500x500'), class:'images-likes' %>
 <% end %>
 </div>
 <% end %>

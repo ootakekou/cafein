@@ -57,7 +57,7 @@
 <!--投稿写真全て表示-->
   <div class="image-likes">
   <div class="shin-list">
-  新着
+  新着  
   </div>
  <div class="index-list">
  <ul class="main-list">
@@ -67,7 +67,7 @@
  <div class="cafe-images-list">
   <%= link_to cafe_path(cafe.id),class:'cafe-topbtn', method: :get do %>
   <% cafe.images.each do |image| %>
-      <%= image_tag image, class:'images-index' %>
+      <%= image_tag image.variant(resize: '500x500'), class:'images-index'%>
       <% end %>
   </div>
  <div class="cafe-drink-name">
@@ -98,7 +98,7 @@
 <div class='cafe-img-content'>
 <%= link_to cafe_path(cafe.id), method: :get do %>
  <% cafe.images.each do |image| %>
-      <%= image_tag image, class:'cafe-img' %>
+      <%= image_tag image.variant(resize: '500x500'), class:'cafe-img' %>
       <% end %>
 <% end %>
 </div>

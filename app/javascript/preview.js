@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
       inputHTML.setAttribute('type', 'file')
 
       imageElement.appendChild(blobImage);
-      imageElement.appendChild(inputHTML)
+      imageElement.appendChild(inputHTML);
       ImageList.appendChild(imageElement);
 
       inputHTML.addEventListener('change', (e) => {

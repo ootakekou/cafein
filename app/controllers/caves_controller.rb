@@ -1,7 +1,8 @@
 class CavesController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_cafe, only: [:show, :edit, :destroy, :update]
   before_action :search_cafe, only:[:index, :search]
+  before_action :move_to_index, only: [:edit, :update, :destroy]
+
   def index
     @cafes = Cafe.order('created_at DESC').includes(:user) 
   end
@@ -57,6 +58,10 @@ class CavesController < ApplicationController
 
   def set_cafe
     @cafe = Cafe.find(params[:id])
+  end
+
+  def move_to_index
+    redirect_to root_path unless @cafe.user_id == current_user.id
   end
 
 end

@@ -1,7 +1,7 @@
 <div class="new-main">
  <div class="new-main-side">
 <%= form_with model:@cafe, url:caves_path, local: true do |f| %>
-
+<%= render 'shared/error_messages', model: f.object %>
 <div class="cafe-new-main">
 <div class="weight-cafe-text">
  投稿写真

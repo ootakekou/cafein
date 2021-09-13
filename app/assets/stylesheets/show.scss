@@ -69,6 +69,7 @@
   height: 320px;
   width: 70%;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .cafe-show-checkbox{
@@ -249,23 +250,43 @@
 }
 
 .cafe-edit{
-  font-size:20px;
-  margin: 0 10px;
-  text-decoration: none;
-  color:white;
+  background: rgb(97, 97, 97); 
+  color: #fff; 
+  padding: 10px 30px; 
+  text-decoration: none; 
+  border-radius: 30px; 
+  font-size: 15px;
+  transition-property: opacity;
+ -webkit-transition-property: opacity;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+  margin-left: 30px;
 }
 
 .cafe-destroy{
-font-size: 20px;
-margin: 0 25px;
-text-decoration: none;
-color: white;
+  background: rgb(97, 97, 97); 
+  color: #fff; 
+  padding: 10px 30px; 
+  text-decoration: none; 
+  border-radius: 30px; 
+  font-size: 15px;
+  transition-property: opacity;
+ -webkit-transition-property: opacity;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+  margin-left: 30px;
 }
 
 .back-btn-show{
-  font-size: 20px;
-  text-decoration: none;
-  margin-left: 10px;
-  color: white;
+  background: rgb(97, 97, 97); 
+  color: #fff; 
+  padding: 10px 30px; 
+  text-decoration: none; 
+  border-radius: 30px; 
+  font-size: 15px;
+  transition-property: opacity;
+ -webkit-transition-property: opacity;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+  margin-left: 30px;
 }
-

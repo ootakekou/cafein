@@ -1,4 +1,6 @@
 <div class="new-main">
+
+<!--投稿情報-->
  <div class="new-main-side">
 <%= form_with model:@cafe, url:caves_path, local: true do |f| %>
 <%= render 'shared/error_messages', model: f.object %>
@@ -32,7 +34,7 @@
 <%= f.text_area :text, id: "text", class: "cafe-text", placeholder:"飲み物、金額、店の情報などを記入してください。" %>
 </div>
 
-
+<!--カテゴリ-->
 <div class="cafe-new-check">
 該当する項目にチェックを入れてください。
 <span>任意</span>

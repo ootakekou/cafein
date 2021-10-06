@@ -1,3 +1,4 @@
+ <!--ログイン時-->
  <% if user_signed_in?  %>
  <%= render "sign_in" %>
   <div class="back-img">
@@ -110,6 +111,7 @@
 </div>
   <% else %>
  </div>
+ <!--ログアウト時-->
 <%= render "logout" %>
 </div>
 <% end %>

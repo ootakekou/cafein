@@ -1,4 +1,5 @@
 <div class="new-main">
+<!--投稿情報-->
  <div class="new-main-side">
 <%= form_with model:@cafe, local: true do |f| %>
 <div class="cafe-new-main">
@@ -30,7 +31,7 @@
 <%= f.text_area :text, id: "text", class: "cafe-text", placeholder:"喫茶店名、金額、雰囲気を記入してください。" %>
 </div>
 
-
+<!--カテゴリ-->
 <div class="cafe-new-check">
 該当する項目にチェックを入れてください。
 <span>任意</span>
@@ -74,6 +75,7 @@
 </div>
 </div>
 
+<!--住所-->
 <div class="cafe-address">
 <div class="addres-text">
 住所を記入してください。
@@ -85,6 +87,7 @@
 </div>
 </div>
 
+<!--遷移ボタン-->
 <div class="cafe-buttton">
 <%= f.submit "変更", class:"sell-btn" %>
 <%=link_to "戻る", cafe_path(@cafe.id), class:"back-btn" %>
